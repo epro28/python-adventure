@@ -1,0 +1,2308 @@
+2024-12-15 19:26:03.0170922024-12-15 19:26:39.7552072024-12-15 19:31:52.252770look at signquit
+2024-12-15 19:33:43.934249
+look at sign
+drop sign
+quit
+
+2024-12-15 19:34:09.817272
+i
+get key
+drop key
+get key
+use key on box
+quit
+
+2024-12-15 19:39:01.294637
+
+2024-12-15 19:41:01.681005
+look at sign
+quit
+
+2024-12-15 19:44:50.943830
+jump
+throw
+throw box
+
+2024-12-15 19:45:49.363430
+throw box
+look
+get dent
+quit
+
+2024-12-15 19:47:40.913685
+throw box
+get dent
+look at dent
+quit
+
+2024-12-15 21:13:25.667032
+map
+
+2024-12-15 21:14:40.966840
+map
+
+2024-12-15 21:21:08.329354
+map
+quit
+
+2024-12-15 21:21:43.876532
+map
+quit
+
+2024-12-15 21:22:31.963152
+map
+
+2024-12-15 21:22:52.429719
+map
+quit
+
+2024-12-15 21:24:16.085492
+map
+quit
+
+2024-12-15 21:25:21.249663
+map
+quit
+
+2024-12-15 21:25:40.714400
+map
+quit
+
+2024-12-15 21:25:55.274319
+map
+quit
+
+2024-12-15 21:39:10.570829
+map
+quit
+
+2024-12-15 21:40:37.035236
+map
+quit
+
+2024-12-15 21:41:02.876480
+map
+quit
+
+2024-12-15 21:42:23.888959
+map
+
+2024-12-15 21:42:44.043725
+map
+quit
+
+2024-12-15 21:42:57.835014
+map
+quit
+
+2024-12-15 21:43:27.176278
+map
+quit
+
+2024-12-15 21:43:52.631244
+map
+quit
+
+2024-12-15 21:44:50.754254
+map
+quit
+
+2024-12-15 21:46:09.978332
+map
+
+2024-12-15 21:46:24.524938
+map
+quit
+
+2024-12-15 21:47:35.237463
+map
+quit
+
+2024-12-15 21:47:55.842250
+map
+quit
+
+2024-12-15 21:48:57.709603
+map
+quit
+
+2024-12-15 21:49:10.471004
+map
+quit
+
+2024-12-15 21:50:34.533556
+map
+quit
+
+2024-12-15 22:17:47.543900
+go e
+
+2024-12-15 22:17:55.633153
+look
+quit
+
+2024-12-15 22:19:28.984686
+look
+map
+go e
+
+2024-12-15 22:23:23.042279
+go e
+
+2024-12-15 22:23:34.512124
+go e
+map
+quit
+
+2024-12-16 09:52:12.569800
+
+2024-12-16 09:52:21.296052
+look
+quit
+
+2024-12-16 09:58:36.046975
+go e
+
+2024-12-16 09:59:06.800469
+go e
+quit
+
+2024-12-16 09:59:49.664429
+go e
+quit
+
+2024-12-16 10:10:53.491577
+go e
+go w
+look
+quit'
+quit
+
+2024-12-16 10:12:02.766758
+go e
+go w
+go e
+go e
+go w
+go e
+quit
+
+2024-12-16 10:26:28.541999
+map
+go e
+map
+go w
+map
+quit
+
+2024-12-16 10:27:02.702514
+map
+go e
+map
+go e
+map
+go w
+map
+quit
+
+2024-12-16 10:36:06.113710
+go e
+map
+
+2024-12-16 10:38:40.002163
+map
+
+2024-12-16 10:39:01.542478
+map
+
+2024-12-16 10:39:51.167214
+map
+
+2024-12-16 21:32:49.256456
+map
+
+2024-12-16 21:33:07.903006
+map
+
+2024-12-16 21:35:09.018175
+map
+
+2024-12-16 21:38:39.687001
+map
+
+2024-12-16 21:41:32.062175
+map
+quit
+
+2024-12-16 21:53:55.243322
+map
+
+2024-12-16 21:54:18.440127
+map
+
+2024-12-16 21:54:46.797173
+map
+go e
+[a
+map
+go w
+map
+go s
+map
+quit
+
+2024-12-16 22:11:18.188630
+map
+go e
+map
+quit
+
+2024-12-16 22:14:56.806594
+map
+quit
+
+2024-12-16 22:15:35.809701
+go e
+map
+go e
+map
+go e
+map
+go w
+map
+go w
+map
+quit
+
+2024-12-16 22:20:26.278162
+map
+go e
+map
+go e
+map
+quit
+
+2024-12-16 22:20:51.803225
+map
+go e
+map
+go e
+map
+quit
+
+2024-12-16 22:22:08.072567
+map
+go e
+map
+quit
+
+2024-12-16 22:22:24.303652
+map
+go e
+map
+quit
+
+2024-12-16 22:24:40.217528
+map
+go e
+map
+quit
+
+2024-12-16 22:27:24.049524
+map
+go e
+map
+quit
+
+2024-12-16 22:28:16.246348
+map
+go e
+map
+quit
+
+2024-12-16 22:29:53.839676
+go e
+map
+quit
+
+2024-12-16 22:30:30.679990
+go e
+map
+quit
+
+2024-12-16 22:32:18.787641
+map
+go e
+map
+quit
+
+2024-12-16 22:33:20.858690
+map
+go e
+map
+map
+go e
+map
+quit
+
+2024-12-17 20:39:46.758086
+map
+go e
+map
+quit
+
+2024-12-17 20:43:34.206964
+map
+go e
+map
+quit
+
+2024-12-17 20:45:41.365351
+map
+
+2024-12-17 20:46:06.024464
+map
+go e
+map
+quit
+
+2024-12-17 20:48:31.745489
+map
+
+2024-12-17 20:49:08.757697
+map
+go e
+map
+quit
+
+2024-12-17 20:51:09.135114
+go e
+map
+quit
+
+2024-12-17 21:06:08.568423
+map
+go e
+map
+go e
+map
+quit
+
+2024-12-17 21:13:36.674011
+map
+go e
+map
+go e
+map
+go w
+map
+quit
+
+2024-12-17 21:14:29.378008
+map
+go e
+map
+quit
+
+2024-12-17 21:17:46.104585
+map
+quit
+
+2024-12-17 21:18:16.143184
+map
+
+2024-12-17 21:19:58.126644
+map
+go e
+map
+go e
+map
+go w
+map
+quit
+
+2024-12-17 21:20:36.226503
+map
+go e
+map
+quit
+
+2024-12-17 21:22:22.368162
+
+2024-12-17 21:36:37.363818
+map
+quit
+
+2024-12-17 21:37:08.342169
+map
+go e
+look s
+look at s
+go s
+look
+map
+look n
+look at n
+go n
+map
+go e
+map
+go e
+map
+go w
+map
+quit
+
+2024-12-17 21:44:37.438360
+map
+go e
+map
+go s
+map
+quit
+
+2024-12-17 22:03:08.637548
+map
+go e
+go s
+map
+quit
+
+2024-12-17 22:03:48.702410
+map
+go e
+go s
+map
+go s
+go n
+map
+go e
+map
+quit
+
+2024-12-17 22:12:04.075118
+quit
+
+2024-12-18 19:59:03.505257
+
+2024-12-18 22:51:18.549241
+
+2024-12-18 22:51:54.733210
+
+2024-12-19 05:37:37.925293
+
+2024-12-19 05:46:56.691995
+
+2024-12-19 05:47:57.249675
+
+2024-12-19 05:48:31.186706
+
+2024-12-19 05:48:45.189766
+
+2024-12-19 05:49:37.313016
+
+2024-12-19 05:50:23.271930
+
+2024-12-19 05:51:23.279618
+
+2024-12-19 05:57:49.054698
+
+2024-12-19 06:01:50.918431
+
+2024-12-19 06:02:06.907521
+
+2024-12-19 06:03:54.019129
+
+2024-12-19 06:05:34.168874
+
+2024-12-19 06:09:16.513544
+
+2024-12-19 17:20:46.381790
+
+2024-12-19 17:21:19.127904
+
+2024-12-19 17:27:11.222671
+
+2024-12-19 17:27:36.508350
+
+2024-12-19 17:27:45.024002
+
+2024-12-19 17:28:06.612571
+
+2024-12-19 17:28:33.748353
+
+2024-12-19 17:30:23.990181
+
+2024-12-19 17:34:13.463960
+
+2024-12-19 17:35:03.003564
+
+2024-12-19 17:36:52.651172
+
+2024-12-19 17:41:16.674048
+
+2024-12-19 17:42:30.170061
+
+2024-12-19 17:44:23.759589
+
+2024-12-19 17:45:17.515335
+
+2024-12-19 17:46:00.888209
+
+2024-12-19 17:47:04.858805
+
+2024-12-19 17:54:33.363605
+
+2024-12-19 17:55:17.178417
+
+2024-12-19 17:56:40.325957
+look
+look east
+look at east
+look at sign
+
+2024-12-19 17:58:38.501172
+look at sign
+i
+drop rock
+
+2024-12-19 18:00:26.582884
+drop box
+
+2024-12-19 18:02:48.773657
+drop box
+
+2024-12-19 18:05:07.735882
+drop box
+
+2024-12-19 18:05:30.755310
+drop box
+look
+
+2024-12-19 18:07:15.666253
+drop box
+look
+
+2024-12-19 18:07:45.159478
+look
+drop box
+look
+
+2024-12-19 20:03:01.953174
+drop box
+quit
+
+2024-12-19 20:05:39.181329
+drop box
+look
+get sign
+get box
+
+2024-12-19 20:10:39.200820
+drop box
+get box
+
+2024-12-19 20:11:42.417406
+drop box
+get box
+
+2024-12-19 20:15:27.507075
+
+2024-12-19 20:15:49.355699
+drop box
+get box
+
+2024-12-19 20:17:29.535936
+drop box
+get box
+
+2024-12-19 20:20:35.958820
+drop box
+get box
+look
+i
+drop box
+i
+look
+go e
+
+2024-12-19 20:30:41.739206
+get box
+drop box
+remove box
+get box
+i
+map
+
+2024-12-19 21:47:02.173496
+go e
+
+2024-12-19 21:48:49.727147
+go e
+
+2024-12-19 22:10:49.606634
+go e
+
+2024-12-19 22:11:13.861653
+go e
+map
+
+2024-12-19 22:11:53.319030
+go e
+look
+map
+go s
+look s
+look at s
+
+2024-12-19 22:18:48.155350
+look at n
+
+2024-12-19 22:26:12.055562
+look at n
+look at e
+
+2024-12-19 22:27:22.312228
+look at n
+look at e
+
+2024-12-19 22:28:29.570512
+look at e
+
+2024-12-19 22:29:07.516743
+look at e
+quit
+
+2024-12-19 22:32:55.358050
+look at n
+look at e
+go e
+go w
+quit
+
+2024-12-19 22:35:56.112824
+look
+drop box
+look box
+look at box
+drop box
+get box
+quit
+
+2024-12-19 22:50:04.218601
+go e
+map
+go s
+map
+go s
+quit
+
+2024-12-19 22:57:46.951517
+go e
+go s
+map
+go e
+go s
+go e
+go w
+look
+look at s
+go s
+quit
+
+2024-12-19 22:58:55.421048
+go e
+go s
+go n
+map
+look
+quit
+
+2024-12-19 22:59:46.829113
+go e
+go s
+go n
+map
+quit
+
+2024-12-19 23:04:41.322692
+use key on box
+
+2024-12-19 23:10:57.810122
+use key on box
+
+2024-12-19 23:11:32.854541
+use key on box
+look
+open box
+
+2024-12-19 23:13:57.926430
+use key on box
+open box
+
+2024-12-19 23:15:32.846963
+use key on box
+open box
+look
+get scroll
+open scroll
+look at scroll
+score
+progress
+quit
+
+2024-12-19 23:23:26.550147
+look
+go e
+go e
+get broom
+go w
+go w
+use broom on seagull
+look
+get dead seagull
+quit
+
+2024-12-20 06:52:15.734161
+
+2024-12-20 06:52:34.060800
+quit
+
+2024-12-20 06:56:35.604783
+drop box
+get box
+quit
+
+2024-12-20 14:30:04.778370
+drop box
+look
+get box
+quit
+
+2024-12-20 22:58:39.591526
+
+2024-12-20 23:00:07.143684
+i
+drop box
+
+2024-12-20 23:04:00.770691
+i
+drop box
+get box
+
+2024-12-20 23:05:36.944149
+drop box
+get box
+i
+look box
+look at box
+
+2024-12-20 23:06:06.727889
+look box
+look at box
+look
+look at candle
+quit
+
+2024-12-21 00:44:30.868269
+map
+progress
+
+2024-12-21 09:40:14.102861
+map
+look
+look at sign
+
+2024-12-21 09:41:03.416803
+look at sign
+quit
+
+2024-12-21 09:42:05.507236
+look at sign
+quit
+
+2024-12-21 09:43:01.494807
+look at sign
+quit
+
+2024-12-21 09:44:30.949270
+look at sign
+quit
+
+2024-12-21 09:46:06.626777
+look at sign
+[a
+quit
+
+2024-12-21 09:46:49.041149
+look at sign
+quit
+
+2024-12-21 09:47:36.443010
+
+2024-12-21 09:47:46.658758
+
+2024-12-21 09:48:00.290465
+[a
+quit
+
+2024-12-21 09:48:42.089530
+quit
+
+2024-12-21 09:49:09.743865
+look at sign
+quit
+
+2024-12-21 09:49:41.378256
+look at sign
+drop sign
+get sign
+use key in box
+
+2024-12-21 10:05:00.943904
+use key in box
+quit
+
+2024-12-21 10:05:46.958669
+use key in box
+quit
+
+2024-12-21 10:06:42.407677
+use key in box
+quit
+
+2024-12-21 10:07:38.290097
+use key in box
+use key on box
+
+2024-12-21 10:10:21.527961
+use key on box
+quit
+
+2024-12-21 17:50:33.723354
+
+2024-12-21 17:52:48.498650
+
+2024-12-21 17:54:59.232332
+
+2024-12-21 17:56:21.590426
+drop box
+
+2024-12-21 17:58:55.667975
+drop box
+
+2024-12-21 18:03:01.941966
+drop box
+look
+get box
+i
+inventory
+quit
+
+2024-12-21 18:04:18.327048
+i
+drop box
+get box
+o
+i
+use key on box
+
+2024-12-21 18:04:47.448498
+use key on box
+look box
+look at box
+open box
+look
+get scroll
+open scroll
+progress
+quit
+
+2024-12-21 19:08:32.594751
+get cat
+talk cat
+talk to cat
+quit
+
+2024-12-21 19:10:14.100710
+talk to cat
+quit
+
+2024-12-21 19:15:26.546130
+talk
+talk to cat
+
+2024-12-21 19:16:06.938336
+talk cat
+talk to cat
+quit
+
+2024-12-21 19:16:41.201022
+talk to cat
+quit
+
+2024-12-21 19:16:51.626467
+talk
+talk cat
+talk to cat
+
+2024-12-21 19:17:06.762746
+talk to cat
+[a
+quit
+
+2024-12-21 19:18:11.789718
+talk to cat
+quit
+
+2024-12-22 11:44:26.384824
+talk box
+talk to box
+quit
+
+2024-12-22 11:44:59.940364
+talk to box
+talk to cat
+quit
+
+2024-12-22 11:47:48.459436
+talk to cat
+
+2024-12-22 11:48:05.480324
+talk to box
+talk to cat
+quit
+
+2024-12-22 11:51:14.097372
+talk to box
+talk to cat
+[a
+quit
+
+2024-12-22 11:51:58.064406
+talk to cat
+
+2024-12-22 11:52:19.026951
+talk to cat
+quit
+
+2024-12-22 11:52:47.361500
+talk to cat
+look at cat
+quit
+
+2024-12-22 12:00:10.978368
+talk to cat
+talk to cat
+quit
+
+2024-12-22 12:00:56.619669
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+quit
+
+2024-12-22 12:04:36.630698
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+quit
+
+2024-12-22 12:07:12.225591
+[a
+quit
+
+2024-12-22 12:07:20.422267
+quit
+
+2024-12-22 12:07:35.565152
+talk to cat
+talk to cat
+talk to cat
+quit
+
+2024-12-22 12:10:24.681323
+talk to cat
+quit
+
+2024-12-22 12:12:19.843249
+talk to cat
+quit
+
+2024-12-22 12:13:46.239177
+talk to cat
+quit
+
+2024-12-22 12:14:01.642919
+look
+quit
+
+2024-12-22 12:15:06.310391
+look
+quit
+
+2024-12-22 12:16:37.221641
+look
+quit
+
+2024-12-22 12:16:58.313903
+look
+quit
+
+2024-12-22 12:18:35.812643
+look
+quit
+
+2024-12-22 12:18:54.518803
+look
+quit
+
+2024-12-22 12:19:31.922029
+look
+quit
+
+2024-12-22 12:19:39.297628
+look
+talk to cat
+talk to cat
+talk to car
+talk to cat
+quit
+
+2024-12-22 12:20:35.579121
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+quit
+
+2024-12-23 16:23:04.499092
+look
+
+2024-12-23 16:23:36.626877
+look
+quit
+
+2024-12-23 16:24:23.472456
+look
+quit
+
+2024-12-23 16:24:53.956595
+look
+quit
+
+2024-12-23 16:25:12.739623
+look
+get cat
+talk to cat
+talk to car
+talk to cat
+talk to cat
+talk to car
+talk to cat
+talk to cat
+talk to cat
+talk to cat
+go east
+look
+quit
+
+2024-12-23 16:39:08.576341
+open box
+use key in box
+use key with box
+use key on box
+open box
+look
+open box
+look box
+look at box
+quit
+
+2024-12-23 16:51:47.078603
+i
+use broom on seagull
+
+2024-12-23 16:55:30.890190
+use broom on seagull
+look
+get dead seagull
+quit
+
+2024-12-23 17:13:58.574338
+use key on box
+open box
+
+2024-12-23 17:14:55.049590
+use key on box
+open box
+quit
+
+2024-12-23 17:19:29.439742
+open box
+use key on box
+open box
+quit
+
+2024-12-23 17:21:42.107962
+use key on box
+open box
+quit
+
+2024-12-23 17:31:53.115453
+use key on box
+open box
+quit
+
+2024-12-23 17:36:01.462017
+use key on box
+open box
+quit
+
+2024-12-23 17:37:20.781037
+use key on box
+open box
+quit
+
+2024-12-23 17:39:00.879799
+quit
+
+2024-12-23 17:39:37.653916
+
+2024-12-23 17:39:51.950791
+[a
+quit
+
+2024-12-23 17:41:06.432179
+quit
+
+2024-12-23 17:41:28.954516
+use key on box
+open box
+quit
+
+2024-12-23 17:44:42.581139
+use key on box
+open box
+quit
+
+2024-12-23 17:45:23.476138
+use key on box
+open box
+quit
+
+2024-12-23 17:47:24.765668
+use key on box
+open box
+quit
+
+2024-12-23 17:48:25.834183
+use key on box
+open box
+quit
+
+2024-12-23 17:51:20.907674
+use key on box
+quit
+
+2024-12-23 17:59:32.220390
+use key on vox
+
+2024-12-23 18:02:24.453546
+use key on box
+quit
+
+2024-12-23 18:14:54.812273
+use key
+quit
+
+2024-12-23 18:15:36.955403
+use key
+quit
+
+2024-12-23 18:35:23.768374
+use key
+use key with box
+use key on box
+quit
+
+2024-12-23 18:42:16.162214
+use key
+use key on box
+quit
+
+2024-12-23 18:42:44.023952
+use key on box
+quit
+
+2024-12-23 18:43:14.000138
+use key on box
+quit
+
+2024-12-23 18:44:57.295769
+use key with box
+quit
+
+2024-12-23 18:49:22.542373
+use key
+use key on box
+
+2024-12-23 18:56:58.317020
+use key in box
+quit
+
+2024-12-23 18:57:03.813066
+use key with box
+quit
+
+2024-12-23 18:57:13.438344
+use box with key
+quit
+
+2024-12-23 18:57:25.526814
+use doog with d
+quit
+
+2024-12-23 18:57:33.304004
+use key
+quit
+
+2024-12-23 18:58:12.862176
+use key
+quit
+
+2024-12-23 18:58:29.944530
+use key
+use dead seagull
+use broom on seagull
+get dead seagull
+use dead seagull
+use dead seagull on box
+look
+talk to dead seagull
+quit
+
+2024-12-23 21:05:12.387309
+talk to cat
+quit
+
+2024-12-23 21:05:28.789037
+talk to cat
+talk cat
+quit
+
+2024-12-23 21:09:59.847587
+talk to cat
+quit
+
+2024-12-23 21:12:11.735611
+talk to cat
+talk to dead seagull
+quit
+
+2024-12-23 21:20:12.842295
+talk to cat
+talk cat
+talk cat
+talk to cat
+talk cat
+talk cat
+talk cat
+talk cat
+look
+drop box
+look
+quit
+
+2024-12-23 21:25:07.277342
+drop box
+drop
+drop dead seagull
+quit
+
+2024-12-23 21:28:24.384644
+drop box
+drop box
+look
+
+2024-12-24 00:13:51.999619
+look
+look at sign
+look sign
+quit
+
+2024-12-24 00:22:19.445897
+
+2024-12-24 00:23:13.747130
+look
+quit
+
+2024-12-24 11:46:33.208818
+look
+go e
+go w
+quit
+
+2024-12-24 11:48:03.687476
+quit
+
+2024-12-24 11:49:00.077994
+quit
+
+2024-12-24 11:51:44.750654
+
+2024-12-24 11:52:03.611527
+
+2024-12-24 15:09:18.488930
+
+2024-12-24 15:11:31.020192
+
+2024-12-24 15:12:19.167607
+
+2024-12-24 15:12:49.748547
+quit
+
+2024-12-24 15:13:21.804612
+go e
+go w
+look at sign
+quit
+
+2024-12-24 15:23:36.614202
+drop box
+quit
+
+2024-12-24 15:24:11.688890
+drop box
+quit
+
+2024-12-24 15:25:18.987539
+go e
+get amethyst
+drop amethyst
+i
+quit
+
+2024-12-25 00:41:16.001598
+go e
+quit
+
+2024-12-25 00:41:59.928625
+go e
+quit
+
+2024-12-25 00:45:32.619680
+go e
+quit
+
+2024-12-25 00:46:06.536315
+go e
+quit
+
+2024-12-25 00:46:29.919411
+go e
+get amethyst
+i
+look
+quit
+
+2024-12-25 00:51:21.927444
+get cat
+go e
+get amethyst
+quit
+
+2024-12-25 18:29:27.442602
+go e
+get amethyst
+quit
+
+2024-12-25 18:30:40.389448
+go e
+get amethyst
+	uit
+quit
+
+2024-12-25 18:31:26.165273
+go e
+get amethyst
+quit
+
+2024-12-25 18:33:57.717844
+go e
+get amethyst
+
+2024-12-25 18:34:16.261867
+go e
+get amethyst
+i
+drop amethyst
+look
+quit
+
+2024-12-25 23:46:31.732009
+go e
+get amethyst
+i
+
+2024-12-25 23:47:26.596838
+go e
+get amethyst
+i
+drop amethyst
+look
+quit
+
+2024-12-25 23:57:15.582358
+go e
+get amethyst
+drop amethyst
+i
+l
+look
+quit
+
+2024-12-25 23:58:05.230113
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-25 23:59:20.239752
+go e
+get amethyst
+drop amethyst
+look
+quit
+
+2024-12-26 00:00:39.180226
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 00:01:53.953781
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 00:04:20.360364
+go e
+quit
+
+2024-12-26 00:05:45.663603
+go e
+get amethyst
+drop amethyst
+look
+quit
+
+2024-12-26 00:06:27.996199
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 00:07:18.590354
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 00:07:44.258387
+go e
+get amethyst
+drop amethyst
+[a
+quit
+
+2024-12-26 00:08:56.382161
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 00:09:50.218717
+go e
+get amethst
+get amethyst
+drop amethyst
+look
+quit
+
+2024-12-26 09:44:49.015680
+go e
+get amethyst
+look
+drop amethyst
+quit
+
+2024-12-26 09:47:43.508761
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 10:00:37.184743
+go e
+get amethyst
+i
+drop amethyst
+
+2024-12-26 10:01:23.631021
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 10:02:48.892386
+go e
+score
+progress
+get amethyst
+drop amethyst
+
+2024-12-26 10:05:19.305748
+go e
+get amethyst
+drop amethyst
+progress
+quit
+
+2024-12-26 10:22:45.211173
+look sign
+look cat
+quit
+
+2024-12-26 10:23:47.763269
+look sign
+
+2024-12-26 10:25:01.152583
+look sign
+
+2024-12-26 10:25:19.294962
+look sign
+go e
+get amethyst
+i
+drop amethyst
+go w
+look sign
+quit
+
+2024-12-26 18:16:02.388648
+go e
+get amethyst
+drop amethyst
+quit
+
+2024-12-26 18:17:15.164287
+go e
+get amethyst
+drop amethyst
+
+2024-12-26 18:17:38.972571
+go e
+get amethyst
+drop amethyst
+get amethyst
+go w
+drop amethyst
+quit
+
+2024-12-26 18:20:32.813926
+go e
+get amethyst
+co w
+go w
+drop amethyst
+quit
+
+2024-12-26 18:21:40.996566
+go e
+get amethyst
+go w
+drop amethyst
+
+2024-12-26 18:35:45.235875
+go e
+get amethyest
+get amethyst
+go w
+drop amethyst
+
+2024-12-26 18:36:25.106892
+go e
+get amethyst
+go w
+drop amethyst
+
+2024-12-26 18:37:06.829999
+go e
+get amethyst
+drop amethyst
+go w
+go e
+get amethyst
+go w
+drop amethyst
+look
+get amethyst
+quit
+
+2024-12-26 18:39:46.338390
+go e
+get amethyst
+go w
+drop amethyst
+get amethyst
+quit
+
+2024-12-26 18:50:17.716190
+i
+drop rock
+look
+i
+quit
+
+2024-12-26 20:17:27.203239
+look
+i
+drop box
+get box
+quit
+
+2024-12-26 20:18:22.759933
+go e
+
+2024-12-26 20:19:02.819482
+look
+go e
+get amethyst sword
+i
+drop sword
+i
+l
+look
+quit
+
+2024-12-26 20:20:04.708489
+i
+get box
+drop box
+go e
+get sword
+drop sword
+use sword
+i
+use sword on rock
+get sword
+go e
+go w
+go w
+look sign
+drop sword
+look sign
+quit
+
+2024-12-26 20:22:53.977350
+look at sign
+i
+go e
+get sword
+go w
+drop sword
+look sign
+quit
+
+2024-12-26 21:17:39.832808
+go e
+get sword
+go e
+go w
+go w
+drop broom
+look
+go e
+go w
+i
+drop sword
+look sign
+quit
+
+2024-12-26 21:18:55.582823
+go e
+get sword
+go w
+drop sword
+look sign
+quit
+
+2024-12-26 21:23:22.347172
+
+2024-12-26 21:23:49.805945
+look
+i
+go e
+
+2024-12-26 21:24:51.080544
+quit
+
+2024-12-26 21:25:34.261069
+quit
+
+2024-12-26 21:27:13.684198
+look
+i
+go e
+look
+quit
+
+2024-12-26 21:30:27.737592
+go e
+get sword
+go e
+go w
+go w
+look
+drop sword
+look sign
+quit'
+[a
+quit
+
+2024-12-26 21:34:33.918598
+go e
+get word
+get sword
+go e
+go w
+go w
+map
+look
+drop sword
+look
+look sign
+quit
+
+2024-12-26 21:41:36.307144
+quit
+
+2024-12-26 21:42:22.009311
+go e
+look
+map
+go s
+
+2024-12-26 21:44:06.967320
+go e
+go s
+
+2024-12-26 21:44:50.829384
+go e
+go e
+go e
+go w
+go s
+
+2024-12-26 21:45:13.261396
+go e
+go s
+
+2024-12-26 21:45:35.912410
+go w
+go e
+go s
+get dagger
+go n
+get sword
+go e
+map
+go w
+go w
+map
+look sign
+drop sword
+look sign
+i
+drop dagger
+look
+look sign
+quit
+
+2024-12-27 07:40:18.537772
+quit
+
+2024-12-27 07:59:38.832658
+look at cat
+talk to cat
+talk to cat
+talk to cat
+look
+quit
+
+2024-12-27 08:06:51.281106
+look at sign
+look
+look at cat
+talk to cat
+talk cat
+talk cat
+talk cat
+talk cat
+talk cat
+talk cat
+talk cat
+look
+map
+go s
+go e
+get sword
+i
+look sword
+i
+look broom
+i
+look rock
+look box
+i
+look key
+look match
+i
+look candle
+i
+talk match
+i
+light candle
+use match
+use match on candle
+i
+look match
+i
+drop match
+i
+look
+map
+go s
+look dagger
+get dagger
+look
+map
+go n
+look s
+look e
+look w
+map
+go e
+i
+open box
+look
+get scrool
+get scroll
+i
+open scroll
+i
+i
+look
+map
+go w
+go w
+look
+map
+look
+look sign
+drop sword
+look
+look sign
+drop dagger
+look sign
+look
+use broom on seagull
+look
+get seagull
+look seagull
+i
+throw
+throw box
+look
+get dent
+look dent
+quit
+
+2024-12-27 20:33:57.401447
+look
+look
+look
+look
+go e
+go w
+use broom on seagull
+look
+look
+look
+look
+quit
+
+2024-12-27 20:35:09.507570
+look
+look
+look
+look
+use broom on seagull
+look
+quit
+
+2024-12-27 20:37:33.985684
+look
+look
+look
+look
+quit
+
+2024-12-27 20:46:57.166393
+get cat
+
+2024-12-27 20:47:39.122266
+get cat
+
+2024-12-27 20:49:55.548309
+get cat
+
+2024-12-27 20:50:50.689766
+get cat
+
+2024-12-27 20:51:01.454668
+get cat
+
+2024-12-27 20:53:28.552362
+get cat
+quit
+
+2024-12-27 20:55:07.173706
+look
+look
+look
+look
+use broom on seagull
+[a
+look
+look
+look
+look
+quit
+
+2024-12-27 20:55:40.942793
+look
+look
+look
+look
+look
+look
+look
+look
+look
+quit
+
+2024-12-27 20:57:23.328767
+look
+look
+look
+look
+look
+use broom on seagull
+look
+look
+look
+quit
+
+2024-12-27 20:58:26.107026
+look
+look
+look
+look
+use broom on seagull
+look
+look
+look
+quit'
+quit
+
+2024-12-27 21:16:26.816632
+use broom on seagull
+quit
+
+2024-12-27 21:50:04.342994
+use broom on seagull
+look
+quit
+
+2024-12-27 21:52:02.968267
+use broom on seagull
+quit
+
+2024-12-27 21:54:25.709975
+use broom on seagull
+quit
+
+2024-12-27 21:55:09.435772
+use broom on seagull
+quit
+
+2024-12-27 21:55:34.408807
+use broom on seagull
+quit
+
+2024-12-27 21:57:09.057195
+use broom on seagull
+look
+quit
+
+2024-12-27 22:01:00.161282
+use broom on seagull
+quit
+
+2024-12-27 22:03:31.261495
+quit
+
+2024-12-27 22:03:38.281783
+quit
+
+2024-12-27 22:06:26.615979
+get seagull
+use broom on seagull
+look
+quit
+
+2024-12-27 22:18:14.564015
+look seagull
+look
+look
+look
+	uit
+quit
+
+2024-12-27 22:26:50.578752
+look
+look
+look
+look
+use broom on seagull
+look
+look
+look
+look
+look
+look
+get seagull
+use broom on seagull
+quit
+
+2024-12-27 22:33:23.348862
+get seagull
+look
+use broom on seagull
+look
+look
+look
+look
+look
+look
+get seagull
+look seagull
+quit
+
+2024-12-27 22:51:48.354959
+
+2024-12-27 22:52:24.277423
+use broom on seagull
+look
+quit
+
+2024-12-27 22:56:49.641480
+look
+use broom on seagull
+look
+quit
+
+2024-12-27 23:01:13.319201
+get seagull
+talk to cat
+look
+look at sign
+look
+use broom on seagull
+look
+quit
+
+2024-12-27 23:05:56.997310
+use broom on seagull
+quit
+
+2024-12-27 23:17:41.537892
+go e
+quit
+
+2024-12-27 23:19:09.031418
+quit
+
+2024-12-27 23:19:25.054170
+quit
+
+2024-12-27 23:19:44.541021
+quit
+
+2024-12-27 23:19:59.868648
+quit
+
+2024-12-27 23:20:41.720699
+quit
+
+2024-12-27 23:20:59.909700
+use broom on seagull
+quit
+
+2024-12-27 23:26:33.634127
+use broom on seagull
+quit
+
+2024-12-27 23:27:27.510086
+use broom on seagull
+quit
+
+2024-12-27 23:28:10.180216
+use broom on seagull
+quit
+
+2024-12-27 23:28:32.371564
+use broom on seagull
+quit
+
+2024-12-27 23:34:41.691972
+use broom on seagull
+look
+go e
+quit
+
+2024-12-27 23:37:20.178332
+go e
+get sword
+i
+look
+quit
+
+2024-12-28 11:13:29.525148
+use broom on seagull
+look
+get seagull
+look
+goi e
+go e
+quit
+
+2024-12-28 11:23:47.504873
+go e
+go e
+get broom
+
+2024-12-28 11:25:07.670258
+go e
+go e
+get broom
+
+2024-12-28 11:26:54.515692
+go e
+go e
+i
+get broom
+
+2024-12-28 11:28:17.558433
+go e
+go e
+get broom
+
+2024-12-28 11:28:42.155898
+go e
+go e
+get broom
+
+2024-12-28 11:32:45.838179
+go e
+go 
+go e
+get broom
+
+2024-12-28 11:33:11.836516
+go e
+go e
+get broom
+
+2024-12-28 11:38:16.487885
+go e
+go 
+go e
+get broom
+
+2024-12-28 11:38:40.779966
+go e
+go e
+get broom
+look
+quit
+
+2024-12-28 11:45:00.854548
+go e
+go e
+get broom
+quit
+
+2024-12-28 11:49:11.219002
+get cat
+quit
+
+2024-12-28 12:00:01.169893
+quit
+
+2024-12-28 12:00:35.290927
+quit
+
+2024-12-28 12:00:50.434556
+
+2024-12-28 12:00:57.431490
+
+2024-12-28 12:25:00.572846
+
+2024-12-28 12:25:37.685013
+
+2024-12-28 12:26:10.376116
+
+2024-12-28 12:26:46.744666
+
+2024-12-28 12:28:15.475447
+
+2024-12-28 12:29:17.156544
+
+2024-12-28 12:30:36.387859
+
+2024-12-28 12:31:46.460044
+
+2024-12-28 12:32:30.912488
+get sign
+go e
+go e
+get broom
+go w
+go w
+drop broom
+look
+quit
