@@ -3,7 +3,6 @@
 from Room import Room
 from Item import Item
 from data_module.Data import Data
-from data_module.RoomData import RoomData
 from data_module.DataItemCat import DataItemCat
 from data_module.DataItemRock import DataItemRock
 from data_module.DataItemBox import DataItemBox
@@ -16,6 +15,10 @@ from data_module.DataItemMatch import DataItemMatch
 from data_module.DataItemSign import DataItemSign
 from data_module.DataItemSeagull import DataItemSeagull
 from data_module.DataItemTreasures import DataItemTreasures
+from data_module.DataRoomTrampoline import DataRoomTrampoline
+from data_module.DataRoomBasic import DataRoomBasic
+from data_module.DataRoomBroom import DataRoomBroom
+from data_module.DataRoomCat import DataRoomCat
 
 
 class DataManager:
@@ -28,7 +31,6 @@ class DataManager:
     def __init__(self):
 
         data = Data()
-        room_data = RoomData()
 
         # Get items from the data
         data_items = [
@@ -53,7 +55,13 @@ class DataManager:
             self._items.append(item)
 
         # Create Rooms from data
-        for data_room in room_data.rooms():
+        data_rooms = [
+            DataRoomTrampoline().room_data,
+            DataRoomBasic().room_data,
+            DataRoomBroom().room_data,
+            DataRoomCat().room_data
+        ]
+        for data_room in data_rooms:
             room = Room(data_room["name"])
             room.set_description(data_room["description"])
             room.setDoors(data_room["doors"])
