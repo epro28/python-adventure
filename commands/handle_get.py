@@ -20,13 +20,14 @@ def do_command(thing, game):
     # make sure it's in the room
     item = game.search_room(thing)
     if item is None:
-        print2("There isn't a " + thing + " in this room.")
+        print2("You don't see that in this room.")
         return
 
     # get it
     if item.gettable() is True:
         game.remove_item_from_player_room(item.name())
         game.addItemToPlayer(item.name())
+        item.set_property("visiblePhrase", "")
         print2("You got the " + item.name() + ".")
     else:
         print2(item.get_property("getPhrase"))

@@ -2355,3 +2355,267 @@ quit
 quit
 
 2024-12-28 21:02:54.690610
+drop box
+look
+quit
+
+2024-12-28 21:05:32.631314
+drop
+drop box
+look
+quit
+
+2024-12-28 21:07:09.571830
+quit
+
+2024-12-28 21:07:43.291448
+quit
+
+2024-12-28 21:10:23.675432
+get box
+quit
+
+2024-12-28 21:11:05.184217
+get box
+look
+drop box
+look
+quit
+
+2024-12-28 21:14:54.419400
+get box
+look
+drop box
+look
+quit
+
+2024-12-28 21:15:50.982673
+quit
+
+2024-12-28 21:16:06.955930
+get box
+drop box
+look
+quit
+
+2024-12-28 21:28:28.990554
+get box
+drop box
+look
+quit
+
+2024-12-28 21:29:00.495918
+get box
+drop box
+look
+quit
+
+2024-12-28 21:29:46.019722
+get box
+drop box
+look
+quit
+
+2024-12-28 21:34:25.353691
+get box
+drop box
+look
+quit
+
+2024-12-28 21:37:24.739110
+get box
+drop box
+look
+quit
+
+2024-12-28 21:41:19.909914
+get box
+drop box
+look
+drop match
+get match
+quit
+
+2024-12-28 21:43:59.975860
+get box
+drop box
+look
+get match
+drop match
+look
+
+2024-12-28 21:45:01.941167
+get box
+drop box
+get match
+drop match
+look
+quit
+
+2024-12-28 21:48:10.777342
+get box
+drop box
+get match
+drop match
+go e
+go e
+get broom
+go w
+go w
+look
+drop broom
+look
+quit
+
+2024-12-28 21:52:01.206084
+get box
+drop box
+get match
+drop match
+go e
+go e
+get broom
+go w
+go w
+drop broom
+look
+quit'
+quit
+
+2024-12-28 21:54:03.106312
+get box
+drop box
+get match
+drop match
+go e
+go e
+get broom
+go w
+go w
+drop broom
+look
+quit
+
+2024-12-28 21:54:52.768962
+get box
+drop box
+get match
+drop match
+go e
+go e
+get broom
+go w
+go w
+drop broom
+look
+quit
+
+2024-12-28 22:00:43.484149
+go e
+get sword
+go e
+get broom
+look
+go w
+go s
+get dagger
+look
+go n
+go e
+map
+go w
+go w
+look
+get box
+get match
+drop box
+look
+
+2024-12-28 22:02:55.265141
+get box
+get match
+go e
+get sword
+go w
+drop box
+look
+drop match
+look
+drop sword
+look
+go e
+go s
+get dagger
+go n
+go w
+look
+drop dagger
+look
+get box
+get match
+get dagger
+get sword
+look sign
+look
+get cat
+look
+quit'
+quit
+
+2024-12-28 22:12:32.145819
+quit
+
+2024-12-28 22:17:36.383747
+
+2024-12-28 22:19:03.623716
+
+2024-12-28 22:19:21.392618
+
+2024-12-28 22:20:33.720991
+
+2024-12-28 22:20:45.421529
+go e
+
+2024-12-28 22:21:13.892001
+go e
+
+2024-12-28 22:21:54.608735
+go e
+
+2024-12-28 22:22:28.341041
+go e
+
+2024-12-28 22:24:12.493639
+go e
+
+2024-12-28 22:26:48.602188
+go e
+
+2024-12-28 22:27:00.602611
+quit
+
+2024-12-28 22:28:29.094457
+go e
+get candle
+get key
+get book
+look
+get sword
+look
+go e
+drop candle
+look
+drop key
+look
+i
+drop sword
+look
+get broom
+drop broom
+look
+throw sword
+get sword
+throw sword
+look
+get dent
+look

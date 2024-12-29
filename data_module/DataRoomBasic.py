@@ -1,4 +1,4 @@
-class DataRoomBasic:
+class DataRoomBasic:  # pylint: disable=too-few-public-methods
     """ Room Data"""
     _room_data = {
         "name": "basic room",

@@ -1,9 +1,16 @@
-class DataItemCandle:
+""" DataItemCandle.py """
+
+
+class DataItemCandle:  # pylint: disable=too-few-public-methods
     """ Item Data"""
     _item_data = {
         "name": "candle",
         "description": "It's a lonely candle waiting for the perfect match.",
         "property_dicts": [
+            {
+                "visible": True,
+                "visiblePhrase": "A lone, nay lonely, candle waits on a shelf."
+            },
             {
                 "lit": False,
                 "otherItemName": "match",

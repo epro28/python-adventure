@@ -38,11 +38,34 @@ class Room:
     def look(self):
         """ Handle look """
         to_print = self._description
-        # print2(self._description)
+
+        items_on_floor = []
         for item in self._items:
-            if item.get_property("visible"):
-                to_print = to_print + " " + item.get_property("visiblePhrase")
+            if item.get_property("visiblePhrase") == "":
+                items_on_floor.append(item)
+            else:
+                if item.get_property("visible"):
+                    to_print = to_print + " " + \
+                        item.get_property("visiblePhrase")
         print2(to_print)
+        if len(items_on_floor) > 0:
+            to_print = "On the floor you see "
+            if len(items_on_floor) == 1:
+                to_print = to_print + items_on_floor[0].name_indef()
+            elif len(items_on_floor) == 2:
+                to_print = to_print + \
+                    items_on_floor[0].name_indef() + " and " + \
+                    items_on_floor[1].name_indef()
+            else:
+                for index, item in enumerate(items_on_floor):
+                    to_print = to_print + item.name_indef()
+                    if index == len(items_on_floor)-2:
+                        to_print = to_print + ", and "
+                    else:
+                        to_print = to_print + ", "
+                to_print = to_print[:-2]  # remove the ", " from the last item
+            to_print = to_print + "."
+            print2(to_print)
 
         # print list of items in room
         if len(self._items) > 0:

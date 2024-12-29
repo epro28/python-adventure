@@ -1,5 +1,5 @@
 class DataItemTreasures:
-    """ Treasures Data"""
+    """ Treasures Data"""  # pylint: disable=too-few-public-methods
     _item_data = {
         'items':
         [
@@ -24,6 +24,10 @@ class DataItemTreasures:
                 "name": "opal dagger",
                 "description": "A small but deadly weapon with a smooth, jet-black blade and hilt.",
                 "property_dicts": [
+                    {
+                        "visible": True,
+                        "visiblePhrase": "On the table is a dagger so dark it appears to absorb the light in its immediate vicinity."
+                    },
                     {
                         "treasure_value": 10
                     },

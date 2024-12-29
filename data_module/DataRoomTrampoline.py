@@ -1,4 +1,4 @@
-class DataRoomTrampoline:
+class DataRoomTrampoline:  # pylint: disable=too-few-public-methods
     """ Item Data"""
     _room_data = {
         "name": "trampoline room",

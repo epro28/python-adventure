@@ -33,7 +33,7 @@ class Game:
             y = int(coordinates[1])
             self._map.addRoom(x, y, self._dm.room(room_name))
             for item_name in item_names:
-                self._map.addItemToRoom(self._dm.item(item_name), room_name)
+                self._map.add_item_to_room(self._dm.item(item_name), room_name)
             if "is_treasure_room" in map_room:
                 self._map.set_treasure_room(room_name)
 
@@ -150,8 +150,9 @@ class Game:
     def addItemToplayer_room(self, itemName):
         self._map.addItemToplayer_room(self._dm.item(itemName))
 
-    def addItemToRoom(self, itemName, roomName):
-        self._map.addItemToRoom(self._dm.item(itemName), roomName)
+    def add_item_to_room(self, item_name, room_name):
+        """ add item to room using their names """
+        self._map.add_item_to_room(self._dm.item(item_name), room_name)
 
     def remove_item_from_player_room(self, item_name):
         """ remove item from player room """

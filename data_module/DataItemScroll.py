@@ -1,4 +1,4 @@
-class DataItemScroll:
+class DataItemScroll:  # pylint: disable=too-few-public-methods
     """ Item Data"""
     _item_data = {
         "name": "scroll",

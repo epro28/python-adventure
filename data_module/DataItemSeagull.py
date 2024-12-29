@@ -1,4 +1,4 @@
-class DataItemSeagull:
+class DataItemSeagull:  # pylint: disable=too-few-public-methods
     """ Item Data"""
     _item_data = {
         "name": "seagull",

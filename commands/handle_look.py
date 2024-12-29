@@ -1,3 +1,5 @@
+""" handle_look.py """
+
 from helper_functions import print2
 from helper_functions import remove_junk_words
 
@@ -52,7 +54,3 @@ def do_command(thing, game):
                         if item.has_property("treasure_value"):
                             print2(item.pretty_name())
         return
-
-#            else:
-#                # the seagull is circling
-#                print2(">> There's an angry seagull circling above you! <<")

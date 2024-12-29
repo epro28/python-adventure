@@ -9,10 +9,22 @@ class Item:
     def __init__(self, name):
         self._name = name
 
+    def starts_with_vowel(self, word):
+        """ returns True if the word starts with a vowel """
+        if word[0] == "a" or word[0] == "e" or word[0] == "i" or word[0] == "o" or word[0] == "u":
+            return True
+        return False
+
     # getters
     def name(self):
         """ getter """
         return self._name
+
+    def name_indef(self):
+        """ get the name with an indefinite article in front """
+        if self.starts_with_vowel(self._name):
+            return str("an " + self.pretty_name())
+        return str("a " + self.pretty_name())
 
     def pretty_name(self):
         """ getter """

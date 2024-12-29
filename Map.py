@@ -24,8 +24,9 @@ class Map:
     def set_treasure_room(self, room_name):
         self.roomWithName(room_name).set_treasure_room("True")
 
-    def addItemToRoom(self, item, roomName):
-        self.roomWithName(roomName).addItem(item)
+    def add_item_to_room(self, item, room_name):
+        """ add item to a room by item name """
+        self.roomWithName(room_name).addItem(item)
 
     def addItemToplayer_room(self, item):
         self.player_room().addItem(item)

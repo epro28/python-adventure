@@ -68,7 +68,7 @@ class DataManager:
             room.setDoors(data_room["doors"])
             self._rooms.append(room)
 
-        self._inventory_items = Inventory().inventory
+        self._inventory_items = Inventory().inventory_items()
         self._map_rooms = MapRooms().map_rooms
 
     def rooms(self):

@@ -1,14 +1,10 @@
-class Inventory:
+""" Inventory.py """
+
+
+class Inventory:  # pylint: disable=too-few-public-methods
     """ Inventory """
-    inventory = [
-        "rock",
-        "box",
-        "key",
-        "match",
-        "candle",
-    ]
+    _inventory_items = []
 
-
-def inventory(self):
-    """ getter """
-    return self.inventory
+    def inventory_items(self):
+        """ getter """
+        return self._inventory_items
