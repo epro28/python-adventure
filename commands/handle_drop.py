@@ -1,3 +1,4 @@
+""" handle_drop.py """
 from helper_functions import print2
 from helper_functions import remove_junk_words
 
@@ -31,4 +32,5 @@ def do_command(thing, game):
     if item.is_treasure() and game.player_room().is_treasure_room():
         game.increment_score(item.get_property("treasure_value"))
         item.set_property("gettable", False)
+        item.set_property("visibleDescription", "---")
         print2("For a split second the sign glowed with a platinum light.")

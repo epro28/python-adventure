@@ -1,6 +1,6 @@
 class DataItemSign:
     """ Item Data"""
-    item_data = {
+    _item_data = {
         "name": "sign",
         "description": "It says \"DROP *** TREASURE *** HERE\".",
         "property_dicts": [
@@ -15,7 +15,6 @@ class DataItemSign:
         ]
     }
 
-
-def item_data(self):
-    """ getter """
-    return self.item_data
+    def item_data(self):
+        """ getter """
+        return self._item_data

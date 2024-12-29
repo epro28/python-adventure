@@ -1,6 +1,6 @@
 class DataRoomBroom:
     """ Room Data"""
-    room_data = {
+    _room_data = {
         "name": "broom room",
         "description": "This is, apparently, a broom room. Wall to wall with brooms locked behind glass cabinet doors.",
         'doors':
@@ -12,7 +12,6 @@ class DataRoomBroom:
         ]
     }
 
-
-def room_data(self):
-    """ getter """
-    return self.room_data
+    def room_data(self):
+        """ getter """
+        return self._room_data

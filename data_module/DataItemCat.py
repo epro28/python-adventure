@@ -1,6 +1,6 @@
 class DataItemCat:
     """ Item Data"""
-    item_data = {
+    _item_data = {
         "name": "cat",
         "description": "It's a feline resembling a tabby cat, with gray fur and surly disposition.",
         "property_dicts": [
@@ -27,7 +27,6 @@ class DataItemCat:
         ]
     }
 
-
-def item_data(self):
-    """ getter """
-    return self.item_data
+    def item_data(self):
+        """ getter """
+        return self._item_data

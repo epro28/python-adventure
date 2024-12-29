@@ -21,11 +21,11 @@ class Game:
         self._player = Player()
 
         # Give items to the player
-        for inventoryItemName in self._dm.inventoryItemNames():
-            self._player.addToInventory(self._dm.item(inventoryItemName))
+        for inventory_item in self._dm.inventory_items():
+            self._player.addToInventory(self._dm.item(inventory_item))
 
         # Populate the map with rooms
-        for map_room in self._dm.mapRooms():
+        for map_room in self._dm.map_rooms():
             room_name = map_room["room_name"]
             coordinates = map_room["coordinates"].split(",")
             item_names = map_room["item_names"]

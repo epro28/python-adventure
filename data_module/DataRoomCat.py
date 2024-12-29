@@ -1,6 +1,6 @@
 class DataRoomCat:
     """ Room Data"""
-    room_data = {
+    _room_data = {
         "name": "cat room",
         "description": "A room filled with scratching posts and milk saucers.",
         'doors':
@@ -13,7 +13,6 @@ class DataRoomCat:
         ]
     }
 
-
-def room_data(self):
-    """ getter """
-    return self.room_data
+    def room_data(self):
+        """ getter """
+        return self._room_data

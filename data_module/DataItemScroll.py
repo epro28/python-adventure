@@ -1,6 +1,6 @@
 class DataItemScroll:
     """ Item Data"""
-    item_data = {
+    _item_data = {
         "name": "scroll",
         "description": "This dusty scroll appears to have been sealed for tens of years.",
         "property_dicts": [
@@ -11,7 +11,6 @@ class DataItemScroll:
         ],
     }
 
-
-def item_data(self):
-    """ getter """
-    return self.item_data
+    def item_data(self):
+        """ getter """
+        return self._item_data

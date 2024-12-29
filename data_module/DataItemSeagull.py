@@ -1,6 +1,6 @@
 class DataItemSeagull:
     """ Item Data"""
-    item_data = {
+    _item_data = {
         "name": "seagull",
         "description": "It's circling above you and doesn't look happy you're here.",
         "property_dicts": [
@@ -23,7 +23,6 @@ class DataItemSeagull:
         ]
     }
 
-
-def item_data(self):
-    """ getter """
-    return self.item_data
+    def item_data(self):
+        """ getter """
+        return self._item_data

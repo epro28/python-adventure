@@ -1,6 +1,6 @@
 class DataItemBox:
     """ Item Data"""
-    item_data = {
+    _item_data = {
         "name": "box",
         "description": "It's a box made of stone. I mean wood.",
         "property_dicts": [
@@ -20,7 +20,6 @@ class DataItemBox:
         ],
     }
 
-
-def item_data(self):
-    """ getter """
-    return self.item_data
+    def item_data(self):
+        """ getter """
+        return self._item_data

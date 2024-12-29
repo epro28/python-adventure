@@ -1,6 +1,6 @@
 class DataItemTreasures:
     """ Treasures Data"""
-    item_data = {
+    _item_data = {
         'items':
         [
             {
@@ -36,8 +36,6 @@ class DataItemTreasures:
         ],  # items
     }
 
-    # Getters
-
     def items(self):
         """ getter """
-        return self.item_data["items"]
+        return self._item_data["items"]

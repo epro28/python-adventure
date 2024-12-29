@@ -1,6 +1,6 @@
 class DataRoomBasic:
     """ Room Data"""
-    room_data = {
+    _room_data = {
         "name": "basic room",
         "description": "You are in the most basic room imaginable. Absolutely nothing memorable about this room.",
         'doors':
@@ -12,7 +12,6 @@ class DataRoomBasic:
         ],
     }
 
-
-def room_data(self):
-    """ getter """
-    return self.room_data
+    def room_data(self):
+        """ getter """
+        return self._room_data

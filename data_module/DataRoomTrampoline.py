@@ -1,6 +1,6 @@
 class DataRoomTrampoline:
     """ Item Data"""
-    room_data = {
+    _room_data = {
         "name": "trampoline room",
         'description': "This is the bounciest room imaginable, due to the floor being made entirely of trampolines.",
         'doors':
@@ -20,7 +20,6 @@ class DataRoomTrampoline:
         ]
     }
 
-
-def room_data(self):
-    """ getter """
-    return self.room_data
+    def room_data(self):
+        """ getter """
+        return self._room_data
