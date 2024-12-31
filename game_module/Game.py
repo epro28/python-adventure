@@ -28,32 +28,42 @@ class Game:
         for map_room in self._dm.map_rooms():
             room_name = map_room["room_name"]
             coordinates = map_room["coordinates"].split(",")
-            item_names = map_room["item_names"]
+            # item_names = map_room["item_names"]
             x = int(coordinates[0])
             y = int(coordinates[1])
             self._map.addRoom(x, y, self._dm.room(room_name))
-            for item_name in item_names:
-                self._map.add_item_to_room(self._dm.item(item_name), room_name)
-            if "is_treasure_room" in map_room:
-                self._map.set_treasure_room(room_name)
+            # for item_name in item_names:
+            #    self._map.add_item_to_room(self._dm.item(item_name), room_name)
 
         self._map.player_room().setVisited(True)
 
-    def search_room(self, object_name):
+    def is_item_in_inventory(self, item_name):
+        """ True if the item is in the players inventory; otherwise False """
+        if self.get_item_in_inventory(item_name) is None:
+            return False
+        return True
+
+    def is_item_in_room(self, item_name):
+        """ True if the item is in the players room; otherwise False """
+        if self.get_item_in_room(item_name) is None:
+            return False
+        return True
+
+    def get_item_in_room(self, object_name):
         """ return item if found; otherwise return None """
         item = self.player_room().find(object_name)
         return item
 
-    def search_inventory(self, object_name):
+    def get_item_in_inventory(self, object_name):
         """ return item if found; otherwise return None """
         item = self.player().inventory().find(object_name)
         return item
 
-    def search_inventory_and_room(self, object_name):
+    def get_item_in_inventory_and_room(self, object_name):
         """ return item if found; otherwise return None """
-        item = self.search_inventory(object_name)
+        item = self.get_item_in_inventory(object_name)
         if (item is None):
-            item = self.search_room(object_name)
+            item = self.get_item_in_room(object_name)
         return item
 
     def commonActions(self):
@@ -72,53 +82,58 @@ class Game:
             success = True
         return success
 
-    def doMove(self, door, x, y):
-        success = False
-        if (door is None):
+    def do_move(self, door, x, y):
+        if door is None:
             print2("You see nowhere to go in that direction.")
-        elif ("locked" in door and door["locked"]):
+            return False
+
+        if "locked" in door and door["locked"]:
             print2("You see a door, but it's locked.")
-        else:
-            success = self.checkAndMoveRooms(x, y)
-        return success
+            return False
+
+        return self.checkAndMoveRooms(x, y)
 
     def movePlayerEast(self):
-        return self.doMove(
+        return self.do_move(
             self.player_room().eastDoor(),
             self._map.playerX()+1,
             self._map.playerY())
 
     def movePlayerWest(self):
-        return self.doMove(
+        return self.do_move(
             self.player_room().westDoor(),
             self._map.playerX()-1,
             self._map.playerY())
 
     def movePlayerNorth(self):
-        return self.doMove(
+        return self.do_move(
             self.player_room().northDoor(),
             self._map.playerX(),
             self._map.playerY()-1)
 
     def movePlayerSouth(self):
-        return self.doMove(
+        return self.do_move(
             self.player_room().southDoor(),
             self._map.playerX(),
             self._map.playerY()+1)
 
-    def handle_revealed_item(self, property_dict, item_desc):
+    def handle_revealed_item(self, main_item, revealed_dict):
         """ Handle revealed item """
-        if "revealedItem" in property_dict:
-            revealed_dict = property_dict["revealedItem"]
-            self.addItemToplayer_room(revealed_dict["name"])
-            print2(revealed_dict["revealedPhrase"])
+        item = self._dm.item(revealed_dict["name"])
+        print(item)
+        item.set_property("visible", True)
+        if self.is_item_in_room(main_item.name()):
+            self.add_item_to_player_room(item.name())
+        elif self.is_item_in_inventory(main_item.name()):
+            self.addItemToPlayer(item.name())
         else:
-            print2(item_desc)
+            print("!!! Revealed item is not in room or with player (" + item.name() + ")")
+        print2(revealed_dict["revealedPhrase"])
 
     def handle_seagull(self):
         """ handle the case of a seagull being in the player's room """
 
-        seagull = self.search_room("seagull")
+        seagull = self.get_item_in_room("seagull")
         if seagull is None:
             return
 
@@ -147,8 +162,9 @@ class Game:
 
     # GAME / MAP INTERACTIONS
 
-    def addItemToplayer_room(self, itemName):
-        self._map.addItemToplayer_room(self._dm.item(itemName))
+    def add_item_to_player_room(self, item_name):
+        """ add item specifically to the player's room """
+        self._map.add_item_to_player_room(self._dm.item(item_name))
 
     def add_item_to_room(self, item_name, room_name):
         """ add item to room using their names """

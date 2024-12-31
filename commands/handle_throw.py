@@ -6,7 +6,7 @@ def handle_throw(words, game):
         print2("You threw the air.")
     else:
         thing = " ".join(words[1:len(words)])
-        item = game.search_inventory(thing)
+        item = game.get_item_in_inventory(thing)
         if item is None:
             print2("You don't have that.")
         else:
@@ -16,7 +16,7 @@ def handle_throw(words, game):
 def do_command(item, game):
     game.commonActions()
     # you successfully threw the object, so add it to the current room
-    game.addItemToplayer_room(item.name())
-    game.addItemToplayer_room("dent")
+    game.add_item_to_player_room(item.name())
+    game.add_item_to_player_room("dent")
     game.player().removeFromInventory(item)
     print2("You threw the " + item.name() + ". And made a dent! @__@")

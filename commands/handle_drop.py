@@ -19,17 +19,17 @@ def do_command(thing, game):
     game.commonActions()
 
     # make sure you're holding it
-    item = game.search_inventory(thing)
+    item = game.get_item_in_inventory(thing)
     if item is None:
         print2("You don't have a " + thing + ".")
         return
 
     # drop it
     game.removeItemFromPlayer(item.name())
-    game.addItemToplayer_room(item.name())
+    game.add_item_to_player_room(item.name())
     print2("You dropped the " + item.name() + ".")
 
-    if item.is_treasure() and game.player_room().is_treasure_room():
+    if item.is_treasure() and game.player_room().has_item("treasure sign"):
         game.increment_score(item.get_property("treasure_value"))
         item.set_property("gettable", False)
         print2("For a split second the sign glowed with a platinum light.")

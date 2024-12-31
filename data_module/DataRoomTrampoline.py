@@ -1,3 +1,6 @@
+""" DataRoomTrampoline.py """
+
+
 class DataRoomTrampoline:  # pylint: disable=too-few-public-methods
     """ Item Data"""
     _room_data = {
@@ -17,7 +20,28 @@ class DataRoomTrampoline:  # pylint: disable=too-few-public-methods
                 "direction": "s",
                 'description': "A short hallway to the south leads to a room with a small opening, just big enough to crawl through.",
             }
-        ]
+        ],
+        'items':
+        [
+            {
+                "name": "amethyst sword",
+                "description": "As heavy as it is beautiful, this imposing blade shines with a violet iridescence.",
+                "property_dicts": [
+                    {
+                        "visible": True,
+                        "visiblePhrase": "SET-ME."
+                    },
+                    {
+                        "treasure_value": 10
+                    },
+                    {
+                        "gettable": True,
+                        "getPhrase": "It's bound to its new spot as if by destiny."
+                    }
+                ],
+            },
+        ],
+        'room_items': []
     }
 
     def room_data(self):

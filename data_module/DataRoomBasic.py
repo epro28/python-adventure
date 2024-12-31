@@ -1,3 +1,6 @@
+""" DataRoomBasic.py """
+
+
 class DataRoomBasic:  # pylint: disable=too-few-public-methods
     """ Room Data"""
     _room_data = {
@@ -10,6 +13,30 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
                 'description': "Through an extremely basic opening to the east you feel a basic breeze.",
             }
         ],
+        'items':
+        [
+            {
+                "name": "treasure sign",
+                "description": "It says \"DROP *** TREASURE *** HERE\".",
+                "property_dicts": [
+                    {
+                        "visible": True,
+                        "visiblePhrase": "A wooden sign is planted conspicuously in one corner."
+                    },
+                    {
+                        "gettable": False,
+                        "getPhrase": "It's firmly planted in the ground."
+                    }
+                ]
+            }
+        ],
+        'room_items':
+        [
+            {
+                "name": "candle",
+                "visiblePhrase": "A lone, nay lonely, candle waits on a shelf."
+            },
+        ]
     }
 
     def room_data(self):

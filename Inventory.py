@@ -1,9 +1,12 @@
+""" Inventory.py """
 from helper_functions import print2
 from helper_functions import find_item_in_list
+from helper_functions import pretty_list
 
 
 class Inventory:
-
+    
+    """ The player's inventory """
     _items = []
 
     def __init__(self):
@@ -25,11 +28,6 @@ class Inventory:
     def look(self):
         """ look """
         if len(self._items) > 0:
-            print2("You are carrying: ")
-            to_print = ""
-            for item in self._items:
-                to_print = to_print + item.pretty_name() + ", "
-            to_print = to_print[:-2]  # remove the ", " from the last item
-            print2(to_print)
+            print2(pretty_list("You are carrying ", self._items))
         else:
-            print2("You have no things.")
+            print2("You have no things. You must get the things.")

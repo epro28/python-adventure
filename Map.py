@@ -21,15 +21,13 @@ class Map:
     def addRoom(self, i, j, room):
         self._grid[i][j] = room
 
-    def set_treasure_room(self, room_name):
-        self.roomWithName(room_name).set_treasure_room("True")
-
     def add_item_to_room(self, item, room_name):
         """ add item to a room by item name """
-        self.roomWithName(room_name).addItem(item)
+        self.roomWithName(room_name).add_item(item)
 
-    def addItemToplayer_room(self, item):
-        self.player_room().addItem(item)
+    def add_item_to_player_room(self, item):
+        """ add item specifically to the player room """
+        self.player_room().add_item(item)
 
     def removeItemFromRoom(self, itemName, room):
         room.removeItem(itemName)

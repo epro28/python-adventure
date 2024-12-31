@@ -6,7 +6,7 @@ class DataItemCat:  # pylint: disable=too-few-public-methods
         "property_dicts": [
             {
                 "visible": True,
-                "visiblePhrase": "A cat tries to not make it obvious that it's watching you."
+                "visiblePhrase": "SET-ME"
             },
             {
                 "gettable": False,

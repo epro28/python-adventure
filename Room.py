@@ -1,5 +1,6 @@
 from helper_functions import print2
 from helper_functions import find_item_in_list
+from helper_functions import pretty_list
 
 
 class Room:
@@ -9,7 +10,6 @@ class Room:
     _items = []
     _doors = []
     _visited = False
-    _is_treasure_room = False
 
     def __init__(self, name):
         self._name = name
@@ -17,9 +17,9 @@ class Room:
         self._items = []
         self._doors = []
         self._visited = False
-        self._is_treasure_room = False
 
-    def addItem(self, item):
+    def add_item(self, item):
+        """ add item to room """
         self._items.append(item)
 
     def removeItem(self, itemName):
@@ -35,6 +35,12 @@ class Room:
         item = find_item_in_list(thing_name_to_find, self._items)
         return item
 
+    def has_item(self, item_name):
+        """ True is the item is in the room; otherwise False """
+        if self.find(item_name) is None:
+            return False
+        return True
+
     def look(self):
         """ Handle look """
         to_print = self._description
@@ -48,33 +54,18 @@ class Room:
                     to_print = to_print + " " + \
                         item.get_property("visiblePhrase")
         print2(to_print)
+
         if len(items_on_floor) > 0:
-            to_print = "On the floor you see "
-            if len(items_on_floor) == 1:
-                to_print = to_print + items_on_floor[0].name_indef()
-            elif len(items_on_floor) == 2:
-                to_print = to_print + \
-                    items_on_floor[0].name_indef() + " and " + \
-                    items_on_floor[1].name_indef()
-            else:
-                for index, item in enumerate(items_on_floor):
-                    to_print = to_print + item.name_indef()
-                    if index == len(items_on_floor)-2:
-                        to_print = to_print + ", and "
-                    else:
-                        to_print = to_print + ", "
-                to_print = to_print[:-2]  # remove the ", " from the last item
-            to_print = to_print + "."
-            print2(to_print)
+            print2(pretty_list("On the floor you see ", items_on_floor))
 
         # print list of items in room
-        if len(self._items) > 0:
-            print("(Debug) Items in room: ")
-            to_print = ""
-            for item in self._items:
-                to_print = to_print + item.pretty_name() + ", "
-            to_print = to_print[:-2]  # remove the ", " from the last item
-            print(to_print)
+        # if len(self._items) > 0:
+        #    print("(Debug) Items in room: ")
+        #    to_print = ""
+        #    for item in self._items:
+        #        to_print = to_print + item.pretty_name() + ", "
+        #    to_print = to_print[:-2]  # remove the ", " from the last item
+        #    print(to_print)
 
     def doLookDir(self, door):
         if not door is None:
@@ -130,11 +121,7 @@ class Room:
     def visited(self):
         return self._visited
 
-    def is_treasure_room(self):
-        """ getter """
-        return self._is_treasure_room
-
-    # Setters
+        # Setters
     def set_description(self, desc):
         self._description = desc
 
@@ -143,7 +130,3 @@ class Room:
 
     def setVisited(self, to_set):
         self._visited = to_set
-
-    def set_treasure_room(self, to_set):
-        """ setter """
-        self._is_treasure_room = to_set

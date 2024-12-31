@@ -18,7 +18,7 @@ def do_command(thing, game):
     game.commonActions()
 
     # make sure it's in the room
-    item = game.search_inventory_and_room(thing)
+    item = game.get_item_in_inventory_and_room(thing)
     if item is None:
         print2("You don't see a " + thing + " here.")
         return

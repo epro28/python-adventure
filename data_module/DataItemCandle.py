@@ -9,7 +9,7 @@ class DataItemCandle:  # pylint: disable=too-few-public-methods
         "property_dicts": [
             {
                 "visible": True,
-                "visiblePhrase": "A lone, nay lonely, candle waits on a shelf."
+                "visiblePhrase": "SET-ME"
             },
             {
                 "lit": False,

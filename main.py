@@ -6,6 +6,7 @@ from commands.handle_look import handle_look
 from data_module.DataManager import DataManager
 from helper_functions import print_terminal_lines
 
+
 LOG_COMMANDS = False
 
 

@@ -1,7 +1,7 @@
-class DataItemBox:
+class DataItemWoodenBox:
     """ Item Data"""
     _item_data = {
-        "name": "box",
+        "name": "wooden box",
         "description": "It's a box made of stone. I mean wood.",
         "property_dicts": [
             {

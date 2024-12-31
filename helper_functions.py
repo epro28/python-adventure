@@ -67,3 +67,24 @@ def find_item_in_list(item_name, item_list):
             found_item = item
             break  # stop searching
     return found_item
+
+
+def pretty_list(start_phrase, item_list):
+    """ print a list of items in a natural style """
+    to_print = start_phrase
+    if len(item_list) == 1:
+        to_print = to_print + item_list[0].name_indef()
+    elif len(item_list) == 2:
+        to_print = to_print + \
+            item_list[0].name_indef() + " and " + \
+            item_list[1].name_indef()
+    else:
+        for index, item in enumerate(item_list):
+            to_print = to_print + item.name_indef()
+            if index == len(item_list)-2:
+                to_print = to_print + ", and "
+            else:
+                to_print = to_print + ", "
+        to_print = to_print[:-2]  # remove the ", " from the last item
+    to_print = to_print + "."
+    return to_print

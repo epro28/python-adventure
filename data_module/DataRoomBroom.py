@@ -9,6 +9,18 @@ class DataRoomBroom:  # pylint: disable=too-few-public-methods
                 "direction": "w",
                 'description': "You can sense pure bounciness to the west.",
             },
+            {
+                "direction": "e",
+                'description': "A hallway extends to the east, ending at a large half-open oak door.",
+            },
+        ],
+        'items': [],
+        'room_items':
+        [
+            {
+                "name": "broom",
+                "visiblePhrase": "Someone has irresponsibly left a broom out in the open. Unexposed, unlocked, and vulnerable."
+            },
         ]
     }
 

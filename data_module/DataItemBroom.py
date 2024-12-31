@@ -10,7 +10,7 @@ class DataItemBroom:  # pylint: disable=too-few-public-methods
         "property_dicts": [
             {
                 "visible": True,
-                "visiblePhrase": "Someone has irresponsibly left a broom out in the open. Unexposed, unlocked, and vulnerable."
+                "visiblePhrase": "SET-ME"
             },
         ],
     }

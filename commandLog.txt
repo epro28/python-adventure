@@ -2619,3 +2619,451 @@ throw sword
 look
 get dent
 look
+i
+get sword
+i
+getquit
+[a
+quit
+
+2024-12-29 09:24:33.661609
+i
+quit
+
+2024-12-29 09:24:56.425501
+i
+quit
+
+2024-12-29 09:25:12.617503
+i
+look
+get box
+i
+get match
+i
+look
+go e
+get sword
+look
+i
+look
+quit
+
+2024-12-29 10:58:44.308623
+quit
+
+2024-12-29 13:26:28.390543
+
+2024-12-29 13:27:02.274111
+
+2024-12-29 13:27:28.634158
+
+2024-12-29 13:27:40.804903
+[a
+quit
+
+2024-12-29 13:27:50.256942
+look sign
+map
+look
+get box
+look
+i
+look
+get match
+i
+look match
+look
+go e
+quit
+
+2024-12-29 21:51:52.269913
+
+2024-12-29 21:52:20.538455
+
+2024-12-29 21:53:39.862547
+
+2024-12-29 21:55:04.492973
+
+2024-12-29 22:00:47.399875
+
+2024-12-29 22:01:28.763311
+
+2024-12-29 22:01:40.957494
+
+2024-12-29 22:02:46.210659
+
+2024-12-29 22:03:41.372366
+
+2024-12-29 22:04:35.689476
+
+2024-12-29 22:37:59.231696
+
+2024-12-29 22:39:27.938027
+
+2024-12-29 22:39:50.931538
+
+2024-12-29 22:40:59.832389
+quit
+
+2024-12-29 22:46:14.163180
+go e
+go w
+quit
+
+2024-12-29 22:47:31.093518
+quit
+
+2024-12-29 22:55:01.433134
+quit
+
+2024-12-29 23:00:25.429951
+go e
+get sword
+
+2024-12-29 23:02:28.805817
+go e
+get sword
+i
+go w
+look
+drop sword
+look
+score
+progress
+look at sign
+quit
+
+2024-12-29 23:07:16.861106
+look
+go e
+go e
+go e
+map
+quit
+
+2024-12-29 23:08:49.439094
+go e
+go e
+go e
+look
+go e
+map
+quit
+
+2024-12-29 23:10:01.074959
+go e
+go e
+go e
+quit
+
+2024-12-30 15:56:17.417983
+
+2024-12-30 15:59:54.037165
+quit
+
+2024-12-30 16:00:41.655071
+quit
+
+2024-12-30 16:04:22.515840
+quit
+
+2024-12-30 16:06:02.573877
+
+2024-12-30 16:06:28.346431
+quit
+
+2024-12-30 16:07:15.018303
+i
+look
+map
+go e
+go e
+go e
+look
+quit
+
+2024-12-30 16:10:25.919648
+go e
+go e
+go e
+quit
+
+2024-12-30 16:15:14.243091
+go e
+go e
+go e
+quit
+
+2024-12-30 16:16:21.141925
+quit
+
+2024-12-30 16:16:41.092280
+quit
+
+2024-12-30 16:17:50.023357
+quit
+
+2024-12-30 16:18:21.178981
+quit
+
+2024-12-30 16:18:45.534448
+go e
+go e
+go e
+quit
+
+2024-12-30 16:19:45.594961
+go e
+go e
+go e
+quit
+
+2024-12-30 16:21:29.716850
+
+2024-12-30 16:21:54.684734
+go e
+go e
+go e
+quit
+
+2024-12-30 16:24:50.622984
+quit
+
+2024-12-30 16:25:05.790136
+quit
+
+2024-12-30 16:27:02.223229
+quit
+
+2024-12-30 16:29:43.030316
+go e
+go e
+go e
+quit
+
+2024-12-30 16:32:18.782944
+go e
+go e
+go e
+look key
+open book
+look
+get key
+look
+get key
+look
+i
+quit
+
+2024-12-30 16:50:25.503632
+go e
+go e
+go 
+go e
+get book
+look
+i
+open red book
+look
+i
+quit
+
+2024-12-30 16:59:20.794478
+go e
+go e
+go e
+get book
+look
+i
+open book
+
+2024-12-30 17:01:30.127075
+go e
+go e
+go 
+go e
+get book
+open book
+look
+quit
+
+2024-12-30 17:03:06.878225
+go 
+ego e
+go e
+go e
+go e
+get book
+open book
+
+2024-12-30 17:04:11.191325
+go e
+go e
+go e
+get book
+open book
+look
+i
+look
+quit
+
+2024-12-30 17:17:15.758543
+gio 
+go e
+go e
+go e
+get book
+open book
+
+2024-12-30 17:17:49.748908
+go e
+go e
+go e
+get book
+open book
+look
+i
+quit
+
+2024-12-30 17:18:28.456869
+go e
+go e
+go e
+get book
+open book
+look
+quit
+
+2024-12-30 17:21:37.471956
+go e
+go e
+go e
+get book
+open book
+
+2024-12-30 17:22:11.822499
+go e
+go e
+go e
+get book
+open book
+
+2024-12-30 17:23:13.624583
+go e
+go e
+go e
+get book
+get key
+open book
+
+2024-12-30 17:24:20.357845
+go e
+go e
+go e
+get book
+open book
+look
+i
+look
+quit
+
+2024-12-30 21:42:27.732711
+go e
+go e
+go e
+get book
+open boox
+open book
+look
+quit
+
+2024-12-30 22:00:34.070965
+go 
+go e
+go e
+go e
+get book
+drop book
+
+2024-12-30 22:01:30.771870
+go e
+go e
+go e
+get book
+drop book
+look
+get book
+look
+i
+open book
+i
+look
+drop book
+look
+i
+quit
+
+2024-12-30 22:12:02.905832
+
+2024-12-30 22:12:36.199951
+go e
+go e
+go e
+i
+look
+quit
+
+2024-12-30 22:44:54.870880
+
+2024-12-30 22:47:10.669542
+
+2024-12-30 22:48:20.132424
+go e
+go e
+go e
+quit
+
+2024-12-30 22:52:25.001977
+go e
+go 
+go e
+go e
+look
+get book
+look
+i
+open book
+look
+i
+go w
+go w
+go w
+look
+go w
+quit
+
+2024-12-30 23:01:09.457693
+go e
+go e
+go e
+open book
+look
+get key
+i
+look
+quit
+
+2024-12-30 23:08:42.699041
+
+2024-12-30 23:09:43.529399
+
+2024-12-30 23:10:26.425057
+look candle
+go e
+go e
+map
+go s
+go w
+map
+go s

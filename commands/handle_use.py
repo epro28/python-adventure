@@ -18,13 +18,13 @@ def do_command(thing, thing2, game):
     game.commonActions()
 
     # search for the first item
-    item1 = game.search_inventory_and_room(thing)
+    item1 = game.get_item_in_inventory_and_room(thing)
     if item1 is None:
         print2("You don't see a " + thing + " here.")
         return
 
     # if found, search for the second item
-    item2 = game.search_inventory_and_room(thing2)
+    item2 = game.get_item_in_inventory_and_room(thing2)
     if item2 is None:
         print2("You don't see a " + thing2 + " here.")
         return

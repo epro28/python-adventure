@@ -35,11 +35,11 @@ def do_command(thing, game):
     else:
         # do the looking
         description = None
-        item = game.search_inventory(thing)
+        item = game.get_item_in_inventory(thing)
         if not item is None:
             description = item.description()
         else:
-            item = game.search_room(thing)
+            item = game.get_item_in_room(thing)
             if not item is None:
                 description = item.description()
 

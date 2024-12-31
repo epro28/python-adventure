@@ -1,3 +1,6 @@
+""" DataRoomCat.py """
+
+
 class DataRoomCat:  # pylint: disable=too-few-public-methods
     """ Room Data"""
     _room_data = {
@@ -9,6 +12,14 @@ class DataRoomCat:  # pylint: disable=too-few-public-methods
                 "direction": "n",
                 'description': "Pure bounciness to the north.",
                 'locked': False
+            },
+        ],
+        'items': [],
+        'room_items':
+        [
+            {
+                "name": "cat",
+                "visiblePhrase": "A cat tries to not make it obvious that it's watching you."
             },
         ]
     }
