@@ -43,7 +43,6 @@ class Room:
 
     def look(self):
         """ Handle look """
-
         to_print = self._description
 
         items_on_floor = []
@@ -59,27 +58,23 @@ class Room:
         if len(items_on_floor) > 0:
             print2(pretty_list("On the floor you see ", items_on_floor))
 
-    def do_look_dir(self, door):
-        """ do look dir """
-
+    def look_dir(self, door):
         if not door is None:
             print2(door["description"])
-            return
-
-        pd = door["property_dicts"]
-        print2("You can't go in that direction.")
+        else:
+            print2("You can't go in that direction.")
 
     def look_east(self):
-        self.do_look_dir(self.eastDoor())
+        self.look_dir(self.eastDoor())
 
     def look_west(self):
-        self.do_look_dir(self.westDoor())
+        self.look_dir(self.westDoor())
 
     def look_south(self):
-        self.do_look_dir(self.southDoor())
+        self.look_dir(self.southDoor())
 
     def look_north(self):
-        self.do_look_dir(self.northDoor())
+        self.look_dir(self.northDoor())
 
     # Getters
     def name(self):

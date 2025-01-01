@@ -5,7 +5,7 @@ from helper_functions import remove_junk_words
 
 
 def handle_look(words, game):
-    """ Handle look """
+    """ handle command """
 
     words = remove_junk_words(words)
     thing = " ".join(words[1:len(words)])
@@ -21,16 +21,16 @@ def do_command(thing, game):
         game.player_room().look()
 
     elif thing in ("e", "east"):
-        game.player_room().lookEast()
+        game.player_room().look_east()
 
     elif thing in ("w", "west"):
-        game.player_room().lookWest()
+        game.player_room().look_west()
 
     elif thing in ("s", "south"):
-        game.player_room().lookSouth()
+        game.player_room().look_south()
 
     elif thing in ("n", "north"):
-        game.player_room().lookNorth()
+        game.player_room().look_north()
 
     else:
         # do the looking

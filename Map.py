@@ -4,8 +4,8 @@ from helper_functions import print2
 class Map:
 
     _grid = []
-    _numRows = 4
-    _numCols = 3
+    _numRows = 8
+    _numCols = 8
     _playerX = 0
     _playerY = 0
 
@@ -18,7 +18,7 @@ class Map:
             for j in range(self._numCols):
                 self._grid[i][j] = None
 
-    def addRoom(self, i, j, room):
+    def add_room(self, i, j, room):
         self._grid[i][j] = room
 
     def add_item_to_room(self, item, room_name):
@@ -84,16 +84,18 @@ class Map:
                 toPrint = toPrint + "-"
         print2(toPrint)
 
-    # setters
-    def setPlayerLocation(self, x, y):
+    def set_player_location(self, x, y):
+        """ setter """
         self._playerX = x
         self._playerY = y
 
     # getters
     def playerX(self):
+        """ getter """
         return self._playerX
 
     def playerY(self):
+        """ getter """
         return self._playerY
 
     def roomWithName(self, name):

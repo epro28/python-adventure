@@ -14,7 +14,7 @@ class DataRoomBroom:  # pylint: disable=too-few-public-methods
                 'description': "A hallway extends to the east, ending at a large half-open oak door.",
             },
         ],
-        'items': [],
+        'extra_items': [],
         'room_items':
         [
             {

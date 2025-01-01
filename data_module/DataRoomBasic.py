@@ -13,7 +13,14 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
                 'description': "Through an extremely basic opening to the east you feel a basic breeze.",
             }
         ],
-        'items':
+        'room_items':
+        [
+            {
+                "name": "candle",
+                "visiblePhrase": "A lone, nay lonely, candle waits on a shelf."
+            },
+        ],
+        'extra_items':
         [
             {
                 "name": "treasure sign",
@@ -30,13 +37,6 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
                 ]
             }
         ],
-        'room_items':
-        [
-            {
-                "name": "candle",
-                "visiblePhrase": "A lone, nay lonely, candle waits on a shelf."
-            },
-        ]
     }
 
     def room_data(self):

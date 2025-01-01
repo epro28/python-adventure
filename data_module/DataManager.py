@@ -1,15 +1,16 @@
 """ DataManager.py """
 
-import re
 from Room import Room
 from Item import Item
-from data_module.Inventory import Inventory
+from helper_functions import tidy
+from data_module.PlayerConfig import PlayerConfig
 from data_module.MapRooms import MapRooms
 from data_module.DataRoomStudy import DataRoomStudy
 from data_module.DataRoomTrampoline import DataRoomTrampoline
 from data_module.DataRoomBasic import DataRoomBasic
 from data_module.DataRoomBroom import DataRoomBroom
 from data_module.DataRoomCat import DataRoomCat
+from data_module.DataRoomFrontDoor import DataRoomFrontDoor
 from data_module.DataItemTreasures import DataItemTreasures
 from data_module.DataItemWoodenKey import DataItemWoodenKey
 from data_module.DataItemWoodenBox import DataItemWoodenBox
@@ -33,8 +34,15 @@ class DataManager:
     _items = []
     _map_rooms = []
     _inventory_items = []
+    _player_position = []
 
     def __init__(self):
+
+        self._inventory_items = PlayerConfig().inventory_items()
+        pos_x, pos_y = PlayerConfig().position()
+        self._player_position.append(pos_x)
+        self._player_position.append(pos_y)
+        self._map_rooms = MapRooms().map_rooms()
 
         # Get items from the data
         data_items = [
@@ -66,41 +74,43 @@ class DataManager:
             DataRoomBasic().room_data(),
             DataRoomBroom().room_data(),
             DataRoomCat().room_data(),
-            DataRoomStudy().room_data()
+            DataRoomStudy().room_data(),
+            DataRoomFrontDoor().room_data(),
         ]
+        for map_room in self._map_rooms:
+            if "room_data" in map_room:
+                data_rooms.append(map_room["room_data"])
 
         for data_room in data_rooms:
             room = Room(data_room["name"])
-            room.set_description(self.tidy(data_room["description"]))
+            room.set_description(tidy(data_room["description"]))
             room.setDoors(data_room["doors"])
             self._rooms.append(room)
 
-            data_items = data_room["items"]
-            for data_item in data_items:
-                item = Item(data_item["name"])
-                item.set_description(data_item["description"])
-                item.setPropertyDicts(data_item["property_dicts"])
-                room.add_item(item)
-                self._items.append(item)
+            if "room_items" in data_room:
+                data_room_items = data_room["room_items"]
+                for data_room_item in data_room_items:
+                    name = data_room_item["name"]
+                    visiblePhrase = data_room_item["visiblePhrase"]
+                    item = self.item(name)
+                    item.set_property("visiblePhrase", visiblePhrase)
+                    room.add_item(item)
 
-            data_room_items = data_room["room_items"]
-            for data_room_item in data_room_items:
-                print(data_room_item)
-                name = data_room_item["name"]
-                visiblePhrase = data_room_item["visiblePhrase"]
-                item = self.item(name)
-                item.set_property("visiblePhrase", visiblePhrase)
-                room.add_item(item)
+            if "extra_items" in data_items:
+                data_items = data_room["extra_items"]
+                for data_item in data_items:
+                    item = Item(data_item["name"])
+                    item.set_description(data_item["description"])
+                    item.setPropertyDicts(data_item["property_dicts"])
+                    room.add_item(item)
+                    self._items.append(item)
 
-        self._inventory_items = Inventory().inventory_items()
-        self._map_rooms = MapRooms().map_rooms()
-
-    def tidy(self, string):
-        """ removes consecutive whitespaces from a string """
-        return re.sub(' +', ' ', string)
+    def player_position(self):
+        """ getter """
+        return self._player_position
 
     def rooms(self):
-        """ rooms """
+        """ getter """
         return self._rooms
 
     def items(self):

@@ -1,7 +1,13 @@
 import textwrap
+import re
 
 _maxLineLength = 60
 _junk_words = ["on", "with", "in", "to", "at"]
+
+
+def tidy(string):
+    """ removes consecutive whitespaces from a string """
+    return re.sub(' +', ' ', string)
 
 
 def remove_junk_words(word_list):

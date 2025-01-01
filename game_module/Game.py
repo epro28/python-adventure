@@ -26,15 +26,23 @@ class Game:
 
         # Populate the map with rooms
         for map_room in self._dm.map_rooms():
-            room_name = map_room["room_name"]
             coordinates = map_room["coordinates"].split(",")
-            # item_names = map_room["item_names"]
             x = int(coordinates[0])
             y = int(coordinates[1])
-            self._map.addRoom(x, y, self._dm.room(room_name))
-            # for item_name in item_names:
-            #    self._map.add_item_to_room(self._dm.item(item_name), room_name)
+            if "room_name" in map_room:
+                # handle the room name
+                room_name = map_room["room_name"]
+            elif "room_data" in map_room:
+                # handle the room data
+                room_data = map_room["room_data"]
+                room_name = room_data["name"]
+            else:
+                print("!!! No room name or room data provided.")
+                pass
+            self._map.add_room(x, y, self._dm.room(room_name))
 
+        self.check_and_move_rooms(
+            self._dm.player_position()[0], self._dm.player_position()[1])
         self._map.player_room().setVisited(True)
 
     def is_item_in_inventory(self, item_name):
@@ -70,57 +78,69 @@ class Game:
         self.incrementRoomCommandCount()
         self.incrementTotalCommandCount()
 
-    def checkAndMoveRooms(self, x, y):
-        success = False
+    def check_and_move_rooms(self, x, y):
+        """ if there is a room at the location give, set the player's location to the room """
+        """ otherwise print a message that there is no room """
         nextRoom = self._map.roomWithLocation(x, y)
         if nextRoom is None:
-            print2("There is no room in that direction.")
-        else:
-            self._map.setPlayerLocation(x, y)
-            # self._currentRoom = nextRoom
-            self.player_room().setVisited(True)
-            success = True
-        return success
+            print("!!! no room in the direction")
+            # print2("There is no room in that direction.")
+            return
+
+        self._map.set_player_location(x, y)
+        # self.player_room().setVisited(True)
+        # self.player_room().look()
+        # self.resetRoomCommandCount()
+        return True
 
     def do_move(self, door, x, y):
+        """ do move """
+
         if door is None:
-            print2("You see nowhere to go in that direction.")
-            return False
+            print("!!! door is none")
+            # print2("You see nowhere to go in that direction.")
+            return
 
-        if "locked" in door and door["locked"]:
-            print2("You see a door, but it's locked.")
-            return False
+        pds = door["property_dicts"]
+        for pd in pds:
+            passable = pd["passable"]
+            if not passable:
+                print2(pd["passPhrase"])
+                return
 
-        return self.checkAndMoveRooms(x, y)
+        return self.check_and_move_rooms(x, y)
 
-    def movePlayerEast(self):
-        return self.do_move(
+    def move_player_east(self):
+        self.do_move(
             self.player_room().eastDoor(),
             self._map.playerX()+1,
             self._map.playerY())
+        return
 
-    def movePlayerWest(self):
-        return self.do_move(
+    def move_player_west(self):
+        self.do_move(
             self.player_room().westDoor(),
             self._map.playerX()-1,
             self._map.playerY())
+        return
 
-    def movePlayerNorth(self):
-        return self.do_move(
+    def move_player_north(self):
+        self.do_move(
             self.player_room().northDoor(),
             self._map.playerX(),
             self._map.playerY()-1)
+        return
 
-    def movePlayerSouth(self):
-        return self.do_move(
+    def move_player_south(self):
+        self.do_move(
             self.player_room().southDoor(),
             self._map.playerX(),
             self._map.playerY()+1)
+        return
 
     def handle_revealed_item(self, main_item, revealed_dict):
         """ Handle revealed item """
         item = self._dm.item(revealed_dict["name"])
-        print(item)
         item.set_property("visible", True)
         if self.is_item_in_room(main_item.name()):
             self.add_item_to_player_room(item.name())

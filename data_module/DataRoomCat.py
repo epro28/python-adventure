@@ -14,7 +14,7 @@ class DataRoomCat:  # pylint: disable=too-few-public-methods
                 'locked': False
             },
         ],
-        'items': [],
+        'extra_items': [],
         'room_items':
         [
             {
