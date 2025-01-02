@@ -6,11 +6,48 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
     _room_data = {
         "name": "basic room",
         "description": "You are in the most basic room imaginable. Absolutely nothing memorable about this room.",
+        "symbol": "⬜",
         'doors':
         [
             {
                 "direction": "e",
-                'description': "Through an extremely basic opening to the east you feel a basic breeze.",
+                "description": "TODO",
+                "property_dicts": [
+                    {
+                        "passable": True,
+                        "passPhrase": ""
+                    }
+                ]
+            },
+            {
+                "direction": "w",
+                "description": "TODO",
+                "property_dicts": [
+                    {
+                        "passable": True,
+                        "passPhrase": ""
+                    }
+                ]
+            },
+            {
+                "direction": "s",
+                "description": "TODO",
+                "property_dicts": [
+                    {
+                        "passable": True,
+                        "passPhrase": ""
+                    }
+                ]
+            },
+            {
+                "direction": "n",
+                "description": "TODO",
+                "property_dicts": [
+                    {
+                        "passable": True,
+                        "passPhrase": ""
+                    }
+                ]
             }
         ],
         'room_items':

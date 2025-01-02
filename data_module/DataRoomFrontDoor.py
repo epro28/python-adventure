@@ -5,9 +5,10 @@ class DataRoomFrontDoor:  # pylint: disable=too-few-public-methods
     """ Room Data"""
     _room_data = {
         "name": "front door",
-        "description": "The dirt path from the north stops here. To the east is\
-              a large wooden door. The forest is to the west. The stone building's \
-                wall extends further to the south.",
+        "description": "The dirt path from the north stops here. You're at the \
+            entrance to a large stone building. A wooden door faces you to the \
+                east. The stone building's wall extends further to the south.",
+        "symbol": "🟩",
         'doors':
         [
             {
@@ -43,7 +44,7 @@ class DataRoomFrontDoor:  # pylint: disable=too-few-public-methods
             },
             {
                 "direction": "n",
-                "description": "The dirt path leads to the north",
+                "description": "The dirt path leads to the north.",
                 "property_dicts": [
                     {
                         "passable": True,

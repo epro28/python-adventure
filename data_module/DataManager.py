@@ -85,6 +85,8 @@ class DataManager:
             room = Room(data_room["name"])
             room.set_description(tidy(data_room["description"]))
             room.setDoors(data_room["doors"])
+            if "symbol" in data_room:
+                room.set_symbol(data_room["symbol"])
             self._rooms.append(room)
 
             if "room_items" in data_room:

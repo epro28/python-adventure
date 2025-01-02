@@ -43,7 +43,6 @@ class Game:
 
         self.check_and_move_rooms(
             self._dm.player_position()[0], self._dm.player_position()[1])
-        self._map.player_room().setVisited(True)
 
     def is_item_in_inventory(self, item_name):
         """ True if the item is in the players inventory; otherwise False """
@@ -81,16 +80,16 @@ class Game:
     def check_and_move_rooms(self, x, y):
         """ if there is a room at the location give, set the player's location to the room """
         """ otherwise print a message that there is no room """
-        nextRoom = self._map.roomWithLocation(x, y)
+        nextRoom = self._map.room_with_location(x, y)
         if nextRoom is None:
             print("!!! no room in the direction")
             # print2("There is no room in that direction.")
-            return
+            return False
 
         self._map.set_player_location(x, y)
-        # self.player_room().setVisited(True)
-        # self.player_room().look()
-        # self.resetRoomCommandCount()
+        self.player_room().setVisited(True)
+        self.player_room().look()
+        self.resetRoomCommandCount()
         return True
 
     def do_move(self, door, x, y):

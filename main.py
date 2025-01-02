@@ -41,10 +41,10 @@ FIRST_TIME = True
 while True:
 
     if FIRST_TIME:
-        print_terminal_lines("\n==")
-        handle_look(["look"], _game)
-        print("==")
-        print_terminal_lines("")
+        # print_terminal_lines("\n==")
+        # handle_look(["look"], _game)
+        # print("==")
+        # print_terminal_lines("")
         FIRST_TIME = False
 
     print("")  # add a blank line

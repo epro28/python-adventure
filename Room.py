@@ -10,6 +10,7 @@ class Room:
     _items = []
     _doors = []
     _visited = False
+    _symbol = "🔲"
 
     def __init__(self, name):
         self._name = name
@@ -117,12 +118,22 @@ class Room:
     def visited(self):
         return self._visited
 
-        # Setters
+    def symbol(self):
+        """ getter """
+        return self._symbol
+
     def set_description(self, desc):
+        """ setter """
         self._description = desc
 
     def setDoors(self, to_set):
+        """ setter """
         self._doors = to_set
 
     def setVisited(self, to_set):
+        """ setter """
         self._visited = to_set
+
+    def set_symbol(self, to_set):
+        """ setter """
+        self._symbol = to_set

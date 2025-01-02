@@ -41,7 +41,7 @@ class Map:
         # print top of map
         to_print = ""
         for i in range(self._numRows):
-            to_print = to_print + "-----"
+            to_print = to_print + "----"  # "-----"
             if i < self._numRows-1:
                 to_print = to_print + "-"
         print2(to_print)
@@ -51,11 +51,12 @@ class Map:
             toPrint = ""
             for i in range(self._numRows):
                 if i == self._playerX and j == self._playerY:
-                    toPrint = toPrint + "| o |"
+                    toPrint = toPrint + "|🔵|"  # "| o |"
                 elif self.visitedRoom(i, j):
-                    toPrint = toPrint + "| ✓ |"
+                    symbol = self.room_with_location(i, j).symbol()
+                    toPrint = toPrint + "|" + symbol + "|"  # "| ✓ |"
                 else:
-                    toPrint = toPrint + "|   |"
+                    toPrint = toPrint + "|⬛|"  # "|   |"
                 # print gap between cells
                 if i < self._numRows-1:
                     if self.visitedRoom(i, j) and self.visitedRoom(i+1, j):
@@ -69,9 +70,9 @@ class Map:
                 toPrint = ""
                 for i in range(self._numRows):
                     if self.visitedRoom(i, j) and self.visitedRoom(i, j+1):
-                        toPrint = toPrint + "--|--"
+                        toPrint = toPrint + "-||-"  # "--|--"
                     else:
-                        toPrint = toPrint + "-----"
+                        toPrint = toPrint + "----"
                     if i < self._numRows-1:
                         toPrint = toPrint + "-"
                 print2(toPrint)
@@ -79,7 +80,7 @@ class Map:
         # print bottom of map
         toPrint = ""
         for i in range(self._numRows):
-            toPrint = toPrint + "-----"
+            toPrint = toPrint + "----"
             if i < self._numRows-1:
                 toPrint = toPrint + "-"
         print2(toPrint)
@@ -107,7 +108,7 @@ class Map:
         print("!!! Couldn't find room in map")
         return None
 
-    def roomWithLocation(self, x, y):
+    def room_with_location(self, x, y):
         # return self._grid[x][y]
         return self.checkAndGetRoom(x, y)
 
@@ -145,7 +146,7 @@ class Map:
         return self.checkAndGetRoom(x, y+1)
 
     def visitedRoom(self, x, y):
-        if (not self.roomWithLocation(x, y) is None) and (self.roomWithLocation(x, y).visited()):
+        if (not self.room_with_location(x, y) is None) and (self.room_with_location(x, y).visited()):
             return True
         else:
             return False

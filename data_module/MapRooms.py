@@ -12,6 +12,7 @@ class MapRooms:  # pylint: disable=too-few-public-methods
                 "description": "You are in clearing, bounded by a dense forest \
                     to the north and west. The clearing extends to the east and\
                           south as far as the eye can see.",
+                "symbol": "🟩",
                 'doors':
                 [
                     {
@@ -66,6 +67,7 @@ class MapRooms:  # pylint: disable=too-few-public-methods
                         you can see. You can see a forest line in the distance \
                             to the west. There is a gray stone wall a few steps\
                                   to the south.",
+                "symbol": "🟩",
                 'doors':
                 [
                     {
@@ -120,6 +122,7 @@ class MapRooms:  # pylint: disable=too-few-public-methods
                         you can see. You can see a forest line in the far \
                             distance to the west. You're on the north edge of a\
                                   gray stone building.",
+                "symbol": "🟩",
                 'doors':
                 [
                     {
@@ -173,6 +176,7 @@ class MapRooms:  # pylint: disable=too-few-public-methods
                     to the north. The clearing extends to the east and west as \
                         far as you can see. There's a window just above \
                             eye-level in the gray stone wall to the south.",
+                "symbol": "🟩",
                 'doors':
                 [
                     {
@@ -228,6 +232,7 @@ class MapRooms:  # pylint: disable=too-few-public-methods
                     to the north. The clearing extends to the east and west as \
                         far as you can see. You're on the north edge of a gray \
                             stone building.",
+                "symbol": "🟩",
                 'doors':
                 [
                     {
@@ -289,6 +294,7 @@ class MapRooms:  # pylint: disable=too-few-public-methods
                 "description": "You step out of the forest and into a clearing.\
                       The dirt path that lead you here turns to the south. \
                         Straight ahead to the east you make out a gray building.",
+                "symbol": "🟩",
                 'doors':
                 [
                     {
@@ -361,15 +367,12 @@ class MapRooms:  # pylint: disable=too-few-public-methods
         ##  ROW 2  ################################
         {
             "coordinates": "0,2",
-            "room_name": "study"
-        },
-        {
-            "coordinates": "1,2",
             "room_data": {
-                "name": "outskirts12",
-                "description": "A dirt path continues to the north and south \
-                    along the west side of a gray stone building. To your west \
+                "name": "outskirts02",
+                "description": "A dirt path continues to the north and south. \
+                    You are outside a stone building to the east. To your west \
                         is a dense forest.",
+                "symbol": "🟩",
                 'doors':
                 [
                     {
@@ -378,7 +381,7 @@ class MapRooms:  # pylint: disable=too-few-public-methods
                         "property_dicts": [
                             {
                                 "passable": False,
-                                "passPhrase": "You don't see any way over, around, or through the stone wall"
+                                "passPhrase": "You don't see any way over, around, or through the stone wall."
                             }
                         ]
                     },
@@ -416,6 +419,10 @@ class MapRooms:  # pylint: disable=too-few-public-methods
             }
         },
         {
+            "coordinates": "1,2",
+            "room_name": "study"
+        },
+        {
             "coordinates": "2,2",
             "room_name": "study"
         },
@@ -438,15 +445,15 @@ class MapRooms:  # pylint: disable=too-few-public-methods
         ##  ROW 3  ################################
         {
             "coordinates": "0,3",
-            "room_name": "study"
-        },
-        {
-            "coordinates": "1,3",
             "room_name": "front door"
         },
         {
-            "coordinates": "2,3",
+            "coordinates": "1,3",
             "room_name": "basic room"
+        },
+        {
+            "coordinates": "2,3",
+            "room_name": "trampoline room"
         },
         {
             "coordinates": "3,3",
