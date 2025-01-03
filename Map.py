@@ -4,8 +4,8 @@ from helper_functions import print2
 class Map:
 
     _grid = []
-    _numRows = 8
-    _numCols = 8
+    _numRows = 5
+    _numCols = 5
     _playerX = 0
     _playerY = 0
 

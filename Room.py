@@ -122,11 +122,15 @@ class Room:
         """ getter """
         return self._symbol
 
+    def set_name(self, to_set):
+        """ setter """
+        self._name = to_set
+
     def set_description(self, desc):
         """ setter """
         self._description = desc
 
-    def setDoors(self, to_set):
+    def set_doors(self, to_set):
         """ setter """
         self._doors = to_set
 

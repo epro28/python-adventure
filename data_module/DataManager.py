@@ -1,10 +1,13 @@
 """ DataManager.py """
 
+import copy
 from Room import Room
 from Item import Item
 from helper_functions import tidy
 from data_module.PlayerConfig import PlayerConfig
-from data_module.MapRooms import MapRooms
+from data_module.DataRoomMisc import DataRoomMisc
+from data_module.DataRoomCastleTemplate import DataRoomCastleTemplate
+from data_module.DataRoomOutskirtsTemplate import DataRoomOutskirtsTemplate
 from data_module.DataRoomStudy import DataRoomStudy
 from data_module.DataRoomTrampoline import DataRoomTrampoline
 from data_module.DataRoomBasic import DataRoomBasic
@@ -31,8 +34,9 @@ class DataManager:
     """ DataManager """
 
     _rooms = []
+    _room_templates = []
     _items = []
-    _map_rooms = []
+    # _map_rooms = []
     _inventory_items = []
     _player_position = []
 
@@ -42,7 +46,6 @@ class DataManager:
         pos_x, pos_y = PlayerConfig().position()
         self._player_position.append(pos_x)
         self._player_position.append(pos_y)
-        self._map_rooms = MapRooms().map_rooms()
 
         # Get items from the data
         data_items = [
@@ -68,7 +71,75 @@ class DataManager:
             item.setPropertyDicts(data_item["property_dicts"])
             self._items.append(item)
 
-        # Create Rooms from data
+        # ==============================================================
+
+        # load in template data
+        # construct room templates
+        # load in pre-built room data
+        # construct rooms, starting with template, and adding from there
+        # load in map data,
+        #   1. constructing rooms using the data
+        #   2. constructing rooms using simply references to pre-build rooms
+        #   3. in both cases, add rooms to map using coordindates
+
+        data_room_templates = self.load_in_template_data()
+
+        self._room_templates = self.make_rooms(
+            data_room_templates, data_room_templates)
+
+        data_rooms = self.load_in_room_data()
+
+        self._rooms = self.make_rooms(data_rooms, data_room_templates)
+
+        misc_rooms = self.make_rooms(
+            DataRoomMisc().misc_rooms(), data_room_templates)
+
+        for misc_room in misc_rooms:
+            print(misc_room.name())
+        # ==============================================================
+
+        # loading room data dicts from any room data dict embedded in MapRooms.py
+        # for map_room in self._map_rooms:
+        #    if "room_data" in map_room:
+        #        data_rooms.append(map_room["room_data"])
+
+        # at this point we have a room list
+
+    # def make_room_templates(self, data_room_templates):
+    #    room_templates = []
+    #    for data_room_template in data_room_templates:
+    #        room_template = self.make_room_from_dict(data_room_template)
+    #        room_templates.append(room_template)
+    #    return room_templates
+
+    def make_rooms(self, data_rooms, data_room_templates):
+        rooms = []
+        for data_room in data_rooms:
+            # if there's a template, do a copy of an existing room template;
+            # otherwise create the room uniquely
+            if "template" in data_rooms:
+                room = copy.deepcopy(self.room_template(
+                    data_room_templates["template"]))
+            else:
+                room = Room(data_room["name"])
+            self.set_name_from_data(data_room, room)
+            self.set_description_from_data(data_room, room)
+            self.set_symbol_from_data(data_room, room)
+            self.set_doors_from_data(data_room, room)
+            self.set_room_items_from_data(data_room, room)
+            self.set_extra_items_from_data(data_room, room)
+            rooms.append(room)
+        return rooms
+
+    def load_in_template_data(self):
+        data_room_templates = [
+            DataRoomOutskirtsTemplate().room_data(),
+            DataRoomCastleTemplate().room_data(),
+        ]
+        return data_room_templates
+
+    def load_in_room_data(self):
+        # load in the room data
         data_rooms = [
             DataRoomTrampoline().room_data(),
             DataRoomBasic().room_data(),
@@ -77,35 +148,10 @@ class DataManager:
             DataRoomStudy().room_data(),
             DataRoomFrontDoor().room_data(),
         ]
-        for map_room in self._map_rooms:
-            if "room_data" in map_room:
-                data_rooms.append(map_room["room_data"])
+        return data_rooms
 
-        for data_room in data_rooms:
-            room = Room(data_room["name"])
-            room.set_description(tidy(data_room["description"]))
-            room.setDoors(data_room["doors"])
-            if "symbol" in data_room:
-                room.set_symbol(data_room["symbol"])
-            self._rooms.append(room)
-
-            if "room_items" in data_room:
-                data_room_items = data_room["room_items"]
-                for data_room_item in data_room_items:
-                    name = data_room_item["name"]
-                    visiblePhrase = data_room_item["visiblePhrase"]
-                    item = self.item(name)
-                    item.set_property("visiblePhrase", visiblePhrase)
-                    room.add_item(item)
-
-            if "extra_items" in data_items:
-                data_items = data_room["extra_items"]
-                for data_item in data_items:
-                    item = Item(data_item["name"])
-                    item.set_description(data_item["description"])
-                    item.setPropertyDicts(data_item["property_dicts"])
-                    room.add_item(item)
-                    self._items.append(item)
+    # def make_rooms(self, data_rooms, room_templates):
+    #    for data_room in data_rooms:
 
     def player_position(self):
         """ getter """
@@ -123,9 +169,9 @@ class DataManager:
         """ getter """
         return self._inventory_items
 
-    def map_rooms(self):
-        """ getter """
-        return self._map_rooms
+    # def map_rooms(self):
+    #    """ getter """
+    #    return self._map_rooms
 
     def item(self, name):
         """ getter """
@@ -139,5 +185,55 @@ class DataManager:
         for room in self._rooms:
             if room.name() == name:
                 return room
-        print("!!! Couldn't find room in data")
+        print("!!! Couldn't find room in data (" + name + ")")
         return None
+
+    def room_template(self, name):
+        for room_template in self._room_templates:
+            if room_template.name() == name:
+                return room_template
+        print("!!! Couldn't find room in data (" + name + ")")
+        return None
+
+    def set_name_from_data(self, dict, room):
+        prop = "room_name"
+        if prop in dict:
+            room.set_name(dict[prop])
+
+    def set_description_from_data(self, dict, room):
+        prop = "description"
+        if prop in dict:
+            room.set_description(dict[prop])
+
+    def set_doors_from_data(self, dict, room):
+        prop = "doors"
+        if prop in dict:
+            room.set_doors(dict[prop])
+
+    def set_symbol_from_data(self, dict, room):
+        prop = "symbol"
+        if prop in dict:
+            room.set_symbol(dict[prop])
+
+    def set_room_items_from_data(self, dict, room):
+        prop = "room_items"
+        if prop in dict:
+            data_room_items = dict[prop]
+            for data_room_item in data_room_items:
+                name = data_room_item["name"]
+                visiblePhrase = data_room_item["visiblePhrase"]
+                item = self.item(name)
+                item.set_property("visiblePhrase", visiblePhrase)
+                room.add_item(item)
+
+    def set_extra_items_from_data(self, dict, room):
+        prop = "extra_items"
+        if prop in dict:
+            data_extra_items = dict[prop]
+            for data_extra_item in data_extra_items:
+                name = data_extra_item["name"]
+                # TODO: fully import an item
+                # visiblePhrase = data_extra_item["visiblePhrase"]
+                # item = self.item(name)
+                # item.set_property("visiblePhrase", visiblePhrase)
+                # room.add_item(item)
