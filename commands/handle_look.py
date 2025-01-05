@@ -21,7 +21,7 @@ def do_command(thing, game):
         game.player_room().look()
 
     elif thing in ("e", "east"):
-        game.player_room().Look_east()
+        game.player_room().look_east()
 
     elif thing in ("w", "west"):
         game.player_room().look_west()

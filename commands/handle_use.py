@@ -72,7 +72,6 @@ def handle_killed_property(property_dict, item):
         item.set_property("getPhrase", item.get_property("killedGetPhrase"))
         item.set_property(
             "visiblePhrase", item.get_property("killedVisiblePhrase"))
-        # game.handle_revealed_item(property_dict, item.description())
     return property_dict
 
 

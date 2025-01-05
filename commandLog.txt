@@ -3834,3 +3834,524 @@ quit
 2025-01-03 10:14:24.220006
 
 2025-01-03 10:18:40.421127
+
+2025-01-03 19:34:41.680195
+
+2025-01-03 19:39:08.580237
+quit
+
+2025-01-03 19:40:07.885372
+quit
+
+2025-01-03 19:47:10.833246
+
+2025-01-03 19:47:53.917591
+
+2025-01-03 19:48:09.620812
+look
+
+2025-01-03 19:54:57.152085
+quit
+
+2025-01-03 20:00:20.927302
+look
+map
+go n
+map
+quit
+
+2025-01-03 20:05:04.346859
+quit
+
+2025-01-03 20:05:36.055979
+quit
+
+2025-01-03 20:07:04.150121
+quit
+
+2025-01-03 20:16:56.383893
+quit
+
+2025-01-03 20:19:30.195134
+quit
+
+2025-01-03 20:20:27.035071
+oa
+quit
+
+2025-01-03 20:21:07.543595
+quit
+
+2025-01-03 20:21:36.582182
+quit
+
+2025-01-03 20:22:40.161849
+
+2025-01-03 20:25:52.831785
+
+2025-01-03 20:26:26.971380
+
+2025-01-03 20:26:37.844660
+
+2025-01-03 20:27:44.334310
+quit
+
+2025-01-03 20:28:12.756355
+map
+
+2025-01-03 20:29:25.953271
+map
+
+2025-01-03 20:29:44.709717
+quit
+
+2025-01-03 20:30:11.105900
+quit
+
+2025-01-03 20:30:35.002176
+quit
+
+2025-01-03 20:30:52.701657
+look
+map
+go s
+map
+go e
+map
+quit
+
+2025-01-03 20:31:49.538198
+map
+go
+go s
+map
+go e
+map
+quit
+
+2025-01-03 20:32:35.269533
+ma
+go s
+go e
+map
+go e
+map
+go w
+map
+go s
+map
+quit
+
+2025-01-03 20:36:15.413766
+go s
+map
+go s
+go s
+go s
+
+2025-01-03 20:39:17.916499
+go s
+map
+go s
+go s
+go s
+
+2025-01-03 20:40:09.019952
+go s
+go s
+go s
+go s
+map
+go e
+map
+go e
+go e
+go e
+go we
+go e
+map
+go n
+go n
+go n
+map
+go n
+map
+go w
+go w
+go w
+map
+go w
+map
+go s
+map
+go s
+map
+go e
+map
+quit
+
+2025-01-03 21:26:56.769412
+quit
+
+2025-01-03 21:27:21.007442
+
+2025-01-03 21:28:05.258267
+look
+map
+quit
+
+2025-01-04 08:23:46.630827
+quit
+
+2025-01-04 08:23:56.165919
+quit
+
+2025-01-04 08:36:32.301058
+map
+quit
+
+2025-01-04 08:42:53.840043
+map
+quit
+
+2025-01-04 08:43:11.709849
+map
+quit
+
+2025-01-04 08:45:42.777714
+map
+quit
+
+2025-01-04 09:01:13.537014
+look
+quit
+
+2025-01-04 09:05:00.045139
+quit
+
+2025-01-04 09:06:50.699064
+look
+go w
+quit
+
+2025-01-04 09:07:20.299658
+look
+go e
+look e
+
+2025-01-04 09:07:54.613901
+look
+look e
+look
+go s
+map
+go e
+map
+quit
+
+2025-01-04 09:08:56.427731
+quit
+
+2025-01-04 09:10:05.376372
+quit
+
+2025-01-04 09:10:19.015314
+quit
+
+2025-01-04 09:11:22.240588
+quit
+
+2025-01-04 09:13:03.271332
+quit
+
+2025-01-04 09:13:31.515192
+go s
+go e
+quit
+
+2025-01-04 09:14:32.335567
+go s
+go e
+map
+go w
+map
+quit
+
+2025-01-04 09:29:48.580053
+go s
+go e
+look door
+look south
+look
+go e
+look
+map
+quit
+
+2025-01-04 09:33:21.475491
+go s
+go e
+look floor
+look floors
+quit
+
+2025-01-04 09:35:57.057996
+go s
+quit'
+oa
+quit
+
+2025-01-04 09:37:03.835249
+quit
+
+2025-01-04 09:41:37.975333
+go s
+go e
+quit
+
+2025-01-04 09:44:30.375322
+goi s
+go s
+go e
+look
+look floor
+quit
+
+2025-01-04 09:45:57.903614
+map
+quit
+
+2025-01-04 09:47:07.563382
+map
+look
+go s
+map
+look
+go w
+look e
+go e
+map
+look
+go s
+map
+look
+go e
+throw
+i
+look
+get sign
+look sign
+look
+get candle
+look candle
+i
+drop candle
+look
+look
+map
+go w
+,ap
+go w
+map
+go n
+go n
+map
+look
+map
+look
+look e
+look w
+look s
+map
+quit
+
+2025-01-05 09:45:12.077026
+go s
+go e
+go n
+quit
+
+2025-01-05 09:46:49.174700
+
+2025-01-05 09:48:10.604729
+go s
+go e
+go n
+look n
+look e
+look w
+look s
+map
+look rug
+look
+move rug
+quit
+
+2025-01-05 09:50:51.366889
+go e
+go s
+go e
+go n
+look rug
+move rug
+quit
+
+2025-01-05 09:52:09.875475
+go s
+go e
+go n
+move rug
+
+2025-01-05 10:05:52.130431
+go s
+go e
+go n
+move rug
+
+2025-01-05 10:20:27.396484
+go s
+go e
+go n
+move rug
+look
+i
+look
+quit
+
+2025-01-05 10:50:36.318429
+go s
+go e
+go n
+move rug
+look
+move curtains
+move woven rug
+move cerulean woven rug
+look
+open curtains
+quit
+
+2025-01-05 11:01:29.017468
+go s
+go e
+go n
+open curtains
+
+2025-01-05 11:01:57.415770
+go s
+go e
+go n
+open curtains
+quit
+
+2025-01-05 11:03:53.538230
+go s
+go e
+go n
+open curtains
+quit
+
+2025-01-05 11:06:49.347373
+go s
+go e
+go n
+open curtains
+
+2025-01-05 11:08:59.800876
+go s
+go e
+go n
+open curtains
+
+2025-01-05 11:10:57.117706
+go s
+go e
+go n
+open curtains
+
+2025-01-05 11:12:20.412888
+go s
+go e
+go n
+open curtains
+
+2025-01-05 11:13:51.456413
+quit
+
+2025-01-05 11:15:07.586498
+go s
+go e
+go n
+look curtains
+look rug
+move rug
+open curtains
+quit
+
+2025-01-05 11:16:57.997743
+go s
+go e
+go n
+open curtains
+quit
+
+2025-01-05 11:18:28.649958
+go s
+go e
+go n
+open curtains
+look
+look
+i
+get egg
+look
+i
+quit
+
+2025-01-05 11:21:19.740624
+go s
+go e
+go n
+open curtains
+look
+quit
+
+2025-01-05 11:26:14.122159
+go s
+go e
+go n
+open curtains
+look
+quit
+
+2025-01-05 11:29:20.405995
+
+2025-01-05 11:31:08.157949
+go so 
+go e
+go n
+go s
+go s
+go e
+go n
+open curtains
+quit
+
+2025-01-05 11:32:01.929308
+go s
+go e
+go n
+open curtains
+look
+get egg
+look
+i
+map
+go s
+map
+go e
+map
+drop egg
+look
+read sign
+look sign

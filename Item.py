@@ -1,3 +1,6 @@
+from helper_functions import tidy
+
+
 class Item:
 
     _name = "Not set"
@@ -47,6 +50,14 @@ class Item:
                 return True
         return False
 
+    def get_property_dict(self, property_name):
+        """ Return's the property's value if it exists; None Type if not """
+        for property_dict in self._propertyDicts:
+            property = list(property_dict.keys())[0]
+            if property == property_name:
+                return property_dict
+        return None
+
     def get_property(self, property_name):
         """ Return's the property's value if it exists; None Type if not """
         for property_dict in self._propertyDicts:
@@ -79,7 +90,7 @@ class Item:
     # setters
     def set_description(self, to_set):
         """ setter"""
-        self._description = to_set
+        self._description = tidy(to_set)
 
     def set_property(self, prop, val):
         """ setter """

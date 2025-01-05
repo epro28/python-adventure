@@ -1,17 +1,20 @@
-""" DataRoomBasic.py """
+""" DataRoomEntrance.py """
 
 
-class DataRoomBasic:  # pylint: disable=too-few-public-methods
+class DataRoomEntrance:  # pylint: disable=too-few-public-methods
     """ Room Data"""
     _room_data = {
         "template": "castle",
-        "name": "basic room",
-        "description": "You are in the most basic room imaginable. Absolutely nothing memorable about this room.",
+        "name": "entrance",
+        "description": "You are in the entryway to a castle. \
+            Despite its age the marble floors somehow retain a foggy luster. \
+                Hallways lead to the north and east. \
+                    There is a red door to the south.",
         'doors':
         [
             {
                 "direction": "e",
-                "description": "TODO",
+                "description": "A hallway leads to the east.",
                 "property_dicts": [
                     {
                         "passable": True,
@@ -21,7 +24,7 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
             },
             {
                 "direction": "w",
-                "description": "TODO",
+                "description": "Sunlight radiates through the castle's entryway.",
                 "property_dicts": [
                     {
                         "passable": True,
@@ -31,7 +34,8 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
             },
             {
                 "direction": "s",
-                "description": "TODO",
+                "description": "Undoubtedly stunning in a previous life, \
+                    this ruby-red door shows more than a few years of age.",
                 "property_dicts": [
                     {
                         "passable": True,
@@ -41,7 +45,7 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
             },
             {
                 "direction": "n",
-                "description": "TODO",
+                "description": "A hallway leads to the north.",
                 "property_dicts": [
                     {
                         "passable": True,
@@ -51,29 +55,9 @@ class DataRoomBasic:  # pylint: disable=too-few-public-methods
             }
         ],
         'room_items':
-        [
-            {
-                "name": "candle",
-                "visiblePhrase": "A lone, nay lonely, candle waits on a shelf."
-            },
-        ],
+        [],
         'extra_items':
-        [
-            {
-                "name": "treasure sign",
-                "description": "It says \"DROP *** TREASURE *** HERE\".",
-                "property_dicts": [
-                    {
-                        "visible": True,
-                        "visiblePhrase": "A wooden sign is planted conspicuously in one corner."
-                    },
-                    {
-                        "gettable": False,
-                        "getPhrase": "It's firmly planted in the ground."
-                    }
-                ]
-            }
-        ],
+        [],
     }
 
     def room_data(self):

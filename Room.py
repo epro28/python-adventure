@@ -87,6 +87,10 @@ class Room:
         """ getter """
         return self._name
 
+    def description(self):
+        """ gettter """
+        return self._description
+
     def items(self):
         """ getter """
         return self._items

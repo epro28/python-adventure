@@ -1,6 +1,7 @@
 from Player import Player
 from Map import Map
 from helper_functions import print2
+from helper_functions import tidy
 
 
 class Game:
@@ -14,32 +15,15 @@ class Game:
     _roomCommandCount = 0
     _totalCommandCount = 0
 
-    def __init__(self, dm):
+    def __init__(self, dm, map):
 
         self._dm = dm
-
+        self._map = map
         self._player = Player()
 
         # Give items to the player
         for inventory_item in self._dm.inventory_items():
             self._player.addToInventory(self._dm.item(inventory_item))
-
-        # Populate the map with rooms
-        for map_room in self._dm.map_rooms():
-            coordinates = map_room["coordinates"].split(",")
-            x = int(coordinates[0])
-            y = int(coordinates[1])
-            if "room_name" in map_room:
-                # handle the room name
-                room_name = map_room["room_name"]
-            elif "room_data" in map_room:
-                # handle the room data
-                room_data = map_room["room_data"]
-                room_name = room_data["name"]
-            else:
-                print("!!! No room name or room data provided.")
-                pass
-            self._map.add_room(x, y, self._dm.room(room_name))
 
         self.check_and_move_rooms(
             self._dm.player_position()[0], self._dm.player_position()[1])
@@ -137,8 +121,9 @@ class Game:
             self._map.playerY()+1)
         return
 
-    def handle_revealed_item(self, main_item, revealed_dict):
+    def handle_revealed_item(self, main_item, property_dict):
         """ Handle revealed item """
+        revealed_dict = property_dict["revealedItem"]
         item = self._dm.item(revealed_dict["name"])
         item.set_property("visible", True)
         if self.is_item_in_room(main_item.name()):
@@ -147,7 +132,7 @@ class Game:
             self.addItemToPlayer(item.name())
         else:
             print("!!! Revealed item is not in room or with player (" + item.name() + ")")
-        print2(revealed_dict["revealedPhrase"])
+        print2(tidy(revealed_dict["revealedPhrase"]))
 
     def handle_seagull(self):
         """ handle the case of a seagull being in the player's room """

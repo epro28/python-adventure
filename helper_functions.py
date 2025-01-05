@@ -2,7 +2,7 @@ import textwrap
 import re
 
 _maxLineLength = 60
-_junk_words = ["on", "with", "in", "to", "at"]
+_junk_words = ["on", "with", "in", "to", "at", "the", "a"]
 
 
 def tidy(string):

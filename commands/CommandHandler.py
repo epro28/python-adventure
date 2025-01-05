@@ -5,6 +5,7 @@ from commands.handle_drop import handle_drop
 from commands.handle_open import handle_open
 from commands.handle_look import handle_look
 from commands.handle_get import handle_get
+from commands.handle_move import handle_move
 from commands.handle_progress import handle_progress
 from commands.handle_use import handle_use
 from commands.handle_throw import handle_throw
@@ -23,6 +24,7 @@ class CommandHandler:
     _commands.append("inventory")
     _commands.append("drop")
     _commands.append("get")
+    _commands.append("move")
     _commands.append("open")
     _commands.append("throw")
     _commands.append("go")
@@ -54,10 +56,12 @@ class CommandHandler:
                 handle_open(words, game)
             case "get":
                 handle_get(words, game)
+            case "move":
+                handle_move(words, game)
             case "look":
                 handle_look(words, game)
-                print("(" + str(game.map().playerX()) +
-                      "," + str(game.map().playerY()) + ")")
+                # print("(" + str(game.map().playerX()) +
+                #      "," + str(game.map().playerY()) + ")")
             case "help":
                 print_list("Possible commands", self._commands)
             case "progress":

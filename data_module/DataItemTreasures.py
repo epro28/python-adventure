@@ -38,6 +38,23 @@ class DataItemTreasures:
                     }
                 ],
             },
+            {
+                "name": "sapphire egg",
+                "description": "A large and surprisingly heavy egg of brilliant blue sapphire.",
+                "property_dicts": [
+                    {
+                        "visible": False,
+                        "visiblePhrase": "A sapphire egg leans in the corner of the window sill."
+                    },
+                    {
+                        "treasure_value": 10
+                    },
+                    {
+                        "gettable": True,
+                        "getPhrase": "It's bound to its new spot as if by destiny."
+                    }
+                ],
+            },
         ],  # items
     }
 

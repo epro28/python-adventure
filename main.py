@@ -34,18 +34,21 @@ print("")
 
 dm = DataManager()
 
-_game = Game(dm)
+print_terminal_lines("\n==")
+_game = Game(dm, dm.map())
 _commandHandler = CommandHandler(dm)
+print("==")
+print_terminal_lines("")
 
 FIRST_TIME = True
 while True:
 
-    if FIRST_TIME:
-        # print_terminal_lines("\n==")
-        # handle_look(["look"], _game)
-        # print("==")
-        # print_terminal_lines("")
-        FIRST_TIME = False
+    # if FIRST_TIME:
+    #    print_terminal_lines("\n==")
+    #    # handle_look(["look"], _game)
+    #    print("==")
+    #    print_terminal_lines("")
+    #    FIRST_TIME = False
 
     print("")  # add a blank line
 

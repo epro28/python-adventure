@@ -9,7 +9,22 @@ class DataRoomCastleTemplate:  # pylint: disable=too-few-public-methods
         "symbol": "⬜",
         'doors': [],
         'room_items': [],
-        'extra_items': [],
+        'extra_items': [
+            {
+                "name": "floor",
+                "description": "You can see a cloudy avatar of yourself in the floor.",
+                "property_dicts": [
+                    {
+                        "visible": False,
+                        "visiblePhrase": "Not Visible"
+                    },
+                    {
+                        "gettable": False,
+                        "getPhrase": "You want to get the floor?"
+                    }
+                ]
+            }
+        ],
     }
 
     def room_data(self):

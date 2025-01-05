@@ -6,15 +6,15 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
     _misc_rooms = [
         ##  ROW 0  ################################
         {
-            "coordinates": "0,0",
             "template": "outskirts",
             "name": "outskirts00",
-            "description": "Outskirts00",
+            "description": "You're at the northwest corner of a stone buiding. \
+                There is a dense forest to the north and west.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -24,17 +24,17 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the west.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A dirt path emerging from the forest begins and extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -44,26 +44,26 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the north.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
-                }
+                },
             ],
         },
         {
-            "coordinates": "1,0",
             "template": "outskirts",
             "name": "outskirts10",
-            "description": "Outskirts10",
+            "description": "You're walking along the north edge of a stone building. \
+                To the north is a dense forest.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -73,7 +73,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -83,36 +83,36 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the north.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
-                }
+                },
             ],
         },
         {
-            "coordinates": "2,0",
             "template": "outskirts",
             "name": "outskirts20",
-            "description": "Outskirts20",
+            "description": "You're walking along the north edge of a stone building. \
+                To the north is a dense forest.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -122,7 +122,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -132,36 +132,37 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the north.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
-                }
+                },
             ],
         },
         {
-            "coordinates": "3,0",
             "template": "outskirts",
             "name": "outskirts30",
-            "description": "Outskirts30",
+            "description": "You're walking along the north edge of a stone building. \
+                To the north is a dense forest. \
+                    To the east you hear the sound of rushing water.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -171,7 +172,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -181,46 +182,48 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the north.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
-                }
+                },
             ],
         },
         {
-            "coordinates": "4,0",
             "template": "outskirts",
             "name": "outskirts40",
-            "description": "Outskirts40",
+            "description": "You're at the northeast corner of a stone buiding. \
+                A deep ravine with a raging river at the bottom opens to the east.\
+                    There is a dense forest to the north.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "Your stomach churns as you look down into the ravine.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "There is only one way to go in this direction, \
+                                and that is to a watery doom at the bottom of the ravine."
                         }
                     ]
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -230,7 +233,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -240,47 +243,48 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the north.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
-                }
+                },
             ],
         },
         ##  ROW 1  ################################
         {
-            "coordinates": "0,1",
             "template": "outskirts",
             "name": "outskirts01",
-            "description": "Outskirts01",
+            "description": "You're standing at a trailhead that leads into a dense forest to the west. \
+                A dirt path runs to the south. \
+                A stone building looms over you to the east.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the west.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A dirt path extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -290,7 +294,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "A grass path extends to the north.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -301,21 +305,6 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
             ],
         },
         {
-            "coordinates": "1,1",
-            "name": "castle11",
-        },
-        {
-            "coordinates": "2,1",
-            "template": "castle",
-            "name": "castle21"
-        },
-        {
-            "coordinates": "3,1",
-            "template": "castle",
-            "name": "castle31"
-        },
-        {
-            "coordinates": "4,1",
             "template": "outskirts",
             "name": "outskirts41",
             "description": "Outskirts41",
@@ -323,27 +312,28 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "Your stomach churns as you look down into the ravine.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "There is only one way to go in this direction, \
+                                and that is to a watery doom at the bottom of the ravine."
                         }
                     ]
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -353,7 +343,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the north.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -365,15 +355,15 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
         },
         ##  ROW 2  ################################
         {
-            "coordinates": "0,2",
             "template": "outskirts",
             "name": "outskirts02",
-            "description": "Outskirts02",
+            "description": "You're standing outside the door to the stone building. A dense forest is to the west.\
+                A dirt path runs to the north.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "You're standing outside the door to the stone building.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -383,17 +373,17 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the west.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A grass path extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -403,7 +393,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "A dirt path extends to the north.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -414,22 +404,6 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
             ],
         },
         {
-            "coordinates": "1,2",
-            "template": "castle",
-            "name": "castle12"
-        },
-        {
-            "coordinates": "2,2",
-            "template": "castle",
-            "name": "castle22"
-        },
-        {
-            "coordinates": "3,2",
-            "template": "castle",
-            "name": "castle32"
-        },
-        {
-            "coordinates": "4,2",
             "template": "outskirts",
             "name": "outskirts42",
             "description": "Outskirts42",
@@ -437,27 +411,28 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "Your stomach churns as you look down into the ravine.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "There is only one way to go in this direction, \
+                                and that is to a watery doom at the bottom of the ravine."
                         }
                     ]
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -467,7 +442,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the north.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -479,35 +454,34 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
         },
         ##  ROW 3  ################################
         {
-            "coordinates": "0,3",
             "template": "outskirts",
             "name": "outskirts03",
-            "description": "front door",
+            "description": "Outskirts03",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the west.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A grass path extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -517,7 +491,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "The beginning of a dirt path is to the north.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -528,22 +502,6 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
             ],
         },
         {
-            "coordinates": "1,3",
-            "template": "castle",
-            "name": "basic room"
-        },
-        {
-            "coordinates": "2,3",
-            "template": "castle",
-            "name": "castle23"
-        },
-        {
-            "coordinates": "3,3",
-            "template": "castle",
-            "name": "castle33"
-        },
-        {
-            "coordinates": "4,3",
             "template": "outskirts",
             "name": "outskirts43",
             "description": "Outskirts43",
@@ -551,27 +509,28 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "Your stomach churns as you look down into the ravine.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "There is only one way to go in this direction, \
+                                and that is to a watery doom at the bottom of the ravine."
                         }
                     ]
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the south.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -581,7 +540,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the north.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -593,15 +552,14 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
         },
         ##  ROW 4  ################################
         {
-            "coordinates": "0,4",
             "template": "outskirts",
             "name": "outskirts04",
-            "description": "Outskirts04",
+            "description": "You're at the southwest corner of a stone buiding. There is a dense forest to the south and west.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -611,27 +569,27 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the west.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the south.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "A grass path extends to the north.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -642,15 +600,15 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
             ],
         },
         {
-            "coordinates": "1,4",
             "template": "outskirts",
             "name": "outskirts14",
-            "description": "Outskirts14",
+            "description": "You're walking along the south edge of a stone building. \
+                To the south is a dense forest.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -660,7 +618,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -670,36 +628,36 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the south.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 }
             ],
         },
         {
-            "coordinates": "2,4",
             "template": "outskirts",
             "name": "outskirts24",
-            "description": "Outskirts24",
+            "description": "You're walking along the south edge of a stone building. \
+                To the south is a dense forest.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -709,7 +667,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -719,36 +677,37 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the south.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 }
             ],
         },
         {
-            "coordinates": "3,4",
             "template": "outskirts",
             "name": "outskirts34",
-            "description": "Outskirts34",
+            "description": "You're walking along the south edge of a stone building. \
+                To the south is a dense forest. \
+                    To the east you hear the sound of rushing water.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "A grass path extends to the east.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -758,7 +717,7 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -768,46 +727,48 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the south.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "You see only the solid, towering wall of the stone building.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You see no way over, around, or through the stone wall."
                         }
                     ]
                 }
             ],
         },
         {
-            "coordinates": "4,4",
             "template": "outskirts",
             "name": "outskirts44",
-            "description": "Outskirts44",
+            "description": "You're at the southeast corner of a stone buiding. \
+                A deep ravine with a raging river at the bottom opens to the east.\
+                    There is a dense forest to the south.",
             'doors':
             [
                 {
                     "direction": "e",
-                    "description": "TODO",
+                    "description": "Your stomach churns as you look down into the ravine.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "There is only one way to go in this direction, \
+                                and that is to a watery doom at the bottom of the ravine."
                         }
                     ]
                 },
                 {
                     "direction": "w",
-                    "description": "TODO",
+                    "description": "A grass path extends to the west.",
                     "property_dicts": [
                         {
                             "passable": True,
@@ -817,17 +778,17 @@ class DataRoomMisc:  # pylint: disable=too-few-public-methods
                 },
                 {
                     "direction": "s",
-                    "description": "TODO",
+                    "description": "There is a dense forest to the south.",
                     "property_dicts": [
                         {
-                            "passable": True,
-                            "passPhrase": ""
+                            "passable": False,
+                            "passPhrase": "You have no desire to return to the forest at this time."
                         }
                     ]
                 },
                 {
                     "direction": "n",
-                    "description": "TODO",
+                    "description": "A narrow, dangerous path along the ravine extends to the north.",
                     "property_dicts": [
                         {
                             "passable": True,

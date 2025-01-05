@@ -116,7 +116,7 @@ class Map:
         return self._grid[self._playerX][self._playerY]
 
     def checkAndGetRoom(self, x, y):
-        if x < 0 or x > self._numRows-1 or y < 0 or y > self._numCols+1:
+        if x < 0 or x > self._numRows-1 or y < 0 or y > self._numCols-1:
             return None
         else:
             return self._grid[x][y]
