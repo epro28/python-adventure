@@ -1,6 +1,7 @@
 """ handle_open.py """
 from helper_functions import print2
 from helper_functions import remove_junk_words
+from helper_functions import indefinite
 
 
 def handle_open(words, game):
@@ -9,13 +10,13 @@ def handle_open(words, game):
     words = remove_junk_words(words)
     thing = " ".join(words[1:len(words)])
     if thing == "":
-        print2("Say \"opem [something]\"")
+        print2("Say \"open [something]\"")
         return
 
     # make sure the item exists
     item = game.get_item_in_inventory_and_room(thing)
     if item is None:
-        print2("You don't see that here.")
+        print2("You don't see " + indefinite(thing) + " here.")
         return
 
     # make sure property exists

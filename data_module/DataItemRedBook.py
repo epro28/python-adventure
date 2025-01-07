@@ -7,7 +7,7 @@ class DataItemRedBook:
         "property_dicts": [
             {
                 "visible": True,
-                "visiblePhrase": "SET-ME"
+                "visiblePhrase": "not visible"
             },
             {
                 "opened": False,

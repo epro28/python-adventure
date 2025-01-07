@@ -58,10 +58,8 @@ class CommandHandler:
                 handle_get(words, game)
             case "move":
                 handle_move(words, game)
-            case "look":
+            case "look" | "check":
                 handle_look(words, game)
-                # print("(" + str(game.map().playerX()) +
-                #      "," + str(game.map().playerY()) + ")")
             case "help":
                 print_list("Possible commands", self._commands)
             case "progress":

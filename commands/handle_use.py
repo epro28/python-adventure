@@ -2,40 +2,41 @@
 
 from helper_functions import print2
 from helper_functions import extract_things_from_words
+from helper_functions import indefinite
 
 
 def handle_use(words, game):
-    """ Handle use """
+    """ handle use """
+
     thing1, thing2 = extract_things_from_words(words)
     if thing1 == "" or thing2 == "":
-        print2("Say \"Use [Something] on [Something]\"")
+        print2("Say \"use [something] on [something]\"")
         return
-    do_command(thing1, thing2, game)
 
-
-def do_command(thing, thing2, game):
-    """ Handle the command """
-    game.commonActions()
-
-    # search for the first item
-    item1 = game.get_item_in_inventory_and_room(thing)
+    # make sure the item exists
+    item1 = game.get_item_in_inventory_and_room(thing1)
     if item1 is None:
-        print2("You don't see a " + thing + " here.")
+        print2("You don't see " + indefinite(thing1) + " here.")
         return
 
-    # if found, search for the second item
+    # if found, make sure the other item exists
     item2 = game.get_item_in_inventory_and_room(thing2)
     if item2 is None:
-        print2("You don't see a " + thing2 + " here.")
+        print2("You don't see " + indefinite(thing2) + " here.")
         return
 
-    # if both are found
-    # print2("You used the " + item1.name() +
-    #       " on the " + item2.name() + "...")
-
+    # make sure property exists
     if not item2.has_property("otherItemName"):
         print2("That had no effect.")
         return
+
+    do_command(thing1, thing2, game)
+
+
+def do_command(item1, item2, game):
+    """ handle the command """
+
+    game.commonActions()
 
     for pd in item2.propertyDicts():
 

@@ -1,6 +1,7 @@
 """ handle_drop.py """
 from helper_functions import print2
 from helper_functions import remove_junk_words
+from helper_functions import indefinite
 
 
 def handle_drop(words, game):
@@ -21,7 +22,7 @@ def do_command(thing, game):
     # make sure you're holding it
     item = game.get_item_in_inventory(thing)
     if item is None:
-        print2("You don't have a " + thing + ".")
+        print2("You don't have " + indefinite(thing) + ".")
         return
 
     # drop it

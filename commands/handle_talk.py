@@ -1,5 +1,6 @@
 from helper_functions import print2
 from helper_functions import remove_junk_words
+from helper_functions import indefinite
 
 
 def handle_talk(words, game):
@@ -20,7 +21,7 @@ def do_command(thing, game):
     # make sure it's in the room
     item = game.get_item_in_inventory_and_room(thing)
     if item is None:
-        print2("You don't see a " + thing + " here.")
+        print2("You don't see " + indefinite(thing) + " here.")
         return
 
     # make sure you can talk to it

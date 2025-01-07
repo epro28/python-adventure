@@ -4355,3 +4355,81 @@ drop egg
 look
 read sign
 look sign
+quit
+
+2025-01-06 19:13:39.199534
+go s
+go e
+quit
+
+2025-01-06 19:16:07.584730
+go s
+go e
+check north
+go n
+go n
+look north
+open curtains
+look
+open egg
+look
+get egg
+quit
+
+2025-01-06 20:55:59.654695
+quit
+
+2025-01-06 20:58:34.337982
+get frog
+drop frog
+drop answer
+quit
+
+2025-01-06 21:08:15.971438
+go s
+go e
+go n
+look curtains
+get fabric
+get curtains
+look curtains
+look
+look floor
+get floor
+look
+look wallpaper
+look
+quit
+
+2025-01-06 21:45:50.136997
+go s
+go e
+go n
+look wallpaper
+look
+get scribblings
+look at scribblings
+
+2025-01-06 21:48:29.335685
+go s
+go e
+go n
+look wallpaper
+look scrbbling
+look scribblings
+
+2025-01-06 21:50:17.810953
+look path
+go s
+go e
+go n
+look wallpaper
+look scribblings
+
+2025-01-06 21:51:07.342072
+go s
+go e
+go n
+look wallpaper
+look scribblings
+quit

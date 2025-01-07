@@ -3,6 +3,21 @@ import re
 
 _maxLineLength = 60
 _junk_words = ["on", "with", "in", "to", "at", "the", "a"]
+_vowels = ["a", "e", "i", "o", "u"]
+
+
+def starts_with_vowel(word):
+    """ returns True if the word starts with a vowel """
+    if word[0] in _vowels:
+        return True
+    return False
+
+
+def indefinite(string):
+    """ convert a noun to its indefinite form """
+    if starts_with_vowel(string):
+        return str("an " + string)
+    return str("a " + string)
 
 
 def tidy(string):
@@ -79,11 +94,11 @@ def pretty_list(start_phrase, item_list):
     """ print a list of items in a natural style """
     to_print = start_phrase
     if len(item_list) == 1:
-        to_print = to_print + item_list[0].name_indef()
+        to_print = to_print + indefinite(item_list[0].pretty_name())
     elif len(item_list) == 2:
         to_print = to_print + \
-            item_list[0].name_indef() + " and " + \
-            item_list[1].name_indef()
+            indefinite(item_list[0].pretty_name()) + \
+            " and " + indefinite(item_list[1].pretty_name())
     else:
         for index, item in enumerate(item_list):
             to_print = to_print + item.name_indef()
