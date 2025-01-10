@@ -93,7 +93,7 @@ class DataRoomBlueRoom:  # pylint: disable=too-few-public-methods
             },
             {
                 "name": "azure wallpaper",
-                "description": "The interchanging diagonal lines give the room a somewhat modern feel.",
+                "description": "The interchanging diagonal lines give the room a modern feel.",
                 "property_dicts": [
                     {
                         "visible": False,
@@ -105,7 +105,7 @@ class DataRoomBlueRoom:  # pylint: disable=too-few-public-methods
                     },
                     {
                         "looked": False,
-                        "desc": "The interchanging diagonal lines give the room a somewhat modern feel.",
+                        "desc": "The interchanging diagonal lines give the room a modern feel.",
                         "revealedItem": {
                             "name": "faint scribblings",
                             "revealedPhrase": "After staring at the wallpaper for some time you start to notice some\

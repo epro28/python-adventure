@@ -1,5 +1,8 @@
 """ DataManager.py """
 
+import json
+import os
+from os.path import isfile, join
 import copy
 from Room import Room
 from Item import Item
@@ -68,6 +71,18 @@ class DataManager:
             #    DataItemSign().item_data(),
             #    DataItemSeagull().item_data(),
         ]
+
+        data_items2 = []
+        data_path = os.path.join(os.getcwd(), "data")
+        for file in os.listdir(data_path):
+            if isfile:
+                file_name = join(data_path, file)
+                print(file_name)
+                with open(file_name) as file_data:
+                    data = file_data.read()
+                    print(data)
+                    data_items.append(json.loads(data))
+
         for treasure in DataItemTreasures().items():
             data_items.append(treasure)
         # Create items from the data
